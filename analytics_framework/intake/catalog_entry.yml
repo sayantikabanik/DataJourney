@@ -1,11 +1,11 @@
 metadata:
   version: 1
 
-  sources:
-    covid_19:
-      driver: csv
-      metadata: {
-          "source url": "https://ourworldindata.org/coronavirus-source-data"
-      }
-      args:
-        urlpath: "https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/locations.csv"
+sources:
+  covid_19:
+    driver: csv
+    metadata: {
+        "source url": "https://ourworldindata.org/coronavirus-source-data"
+    }
+    args:
+      urlpath: "https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/locations.csv"
