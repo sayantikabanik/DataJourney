@@ -1,4 +1,4 @@
-from analytics_framework import intake
+import intake
 
 CATALOG_PATH = "analytics_framework/intake/catalog_entry.yml"
 

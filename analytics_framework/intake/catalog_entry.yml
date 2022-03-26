@@ -9,3 +9,11 @@ sources:
     }
     args:
       urlpath: "https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/locations.csv"
+
+  address_sample:
+    driver: csv
+    metadata: {
+        "source url": "https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html"
+    }
+    args:
+      urlpath: "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
