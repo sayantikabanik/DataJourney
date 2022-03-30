@@ -7,7 +7,6 @@ A code/blog series featuring Data engineering workflow and Open Source tools and
 conda env create -f environment.yml
 conda activate journey
 ```
-<<<<<<< HEAD
 
 ### Install the package locally 
 ```shell
