@@ -1,4 +1,4 @@
-### DataJourney
+### DataJourney :smile:
 A code/blog series featuring Data engineering workflow and Open Source tools and technologies 
 
 ### Creating a virtual environment
@@ -6,4 +6,9 @@ A code/blog series featuring Data engineering workflow and Open Source tools and
 ```shell
 conda env create -f environment.yml
 conda activate journey
+```
+
+### Install the package locally 
+```shell
+pip install -e .
 ```
