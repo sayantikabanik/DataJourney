@@ -1,5 +1,5 @@
 ### DataJourney
->>>>>>> A code/blog series featuring Data engineering workflow and Open Source tools and technologies 
+A code/blog series featuring Data engineering workflow and Open Source tools and technologies 
 
 ### Creating a virtual environment:
 
