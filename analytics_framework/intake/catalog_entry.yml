@@ -2,14 +2,6 @@ metadata:
   version: 1
 
 sources:
-  covid_19:
-    driver: csv
-    metadata: {
-        "source url": "https://ourworldindata.org/coronavirus-source-data"
-    }
-    args:
-      urlpath: "https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/locations.csv"
-
   address_sample:
     driver: csv
     metadata: {
@@ -17,3 +9,11 @@ sources:
     }
     args:
       urlpath: "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
+
+  conutry_overview:
+    driver: json
+    metadata: {
+      "source url": "https://data.world/badosa/uneces-country-overview"
+    }
+    args:
+      urlpath: "https://data.world/badosa/uneces-country-overview/file/unece.json"
