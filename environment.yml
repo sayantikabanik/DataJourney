@@ -19,3 +19,6 @@ dependencies:
   - scikit-learn
   - statsmodels
   - urllib3
+  - hvplot
+  - pip:
+      dagster
