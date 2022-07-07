@@ -5,7 +5,7 @@ name: journey
 channels:
   - conda-forge
 dependencies:
-  - python=3.8
+  - python=3.10
   - intake
   - pre-commit
   - matplotlib
@@ -20,5 +20,5 @@ dependencies:
   - statsmodels
   - urllib3
   - hvplot
-  - pip:
-      dagster
+  - dagster
+  - dagit
