@@ -1,5 +1,5 @@
 ### DataJourney
-A code/blog series featuring Data engineering workflow and Open Source tools and technologies 
+Tutorial featuring Data engineering workflow and Open Source tools and technologies 
 
 ### Creating a virtual environment:
 
@@ -12,3 +12,4 @@ conda activate journey
 ```shell
 pip install -e .
 ```
+
