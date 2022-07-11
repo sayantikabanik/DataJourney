@@ -20,5 +20,9 @@ dependencies:
   - statsmodels
   - urllib3
   - hvplot
-  - dagster
-  - dagit
+  - dagster=0.15.3
+  - dagit=0.15.3
+  - panel
+  - holoviews
+  - scikit-learn
+  - aiohttp
