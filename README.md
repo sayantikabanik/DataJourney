@@ -3,11 +3,11 @@ Tutorial featuring Data engineering workflow and Open Source tools and technolog
 The example datasets are openly available online, metadata info is present in the `intake` catalog
 
 ### 🛠 Current workflows covered (subject to change)
-- Packaging framework added
+- Packaging framework created
+- Conda environment added
+- Sample GitHub actions configured
 - Reading data from online http/https URL using [intake](https://github.com/intake/intake)
 - Simple pipeline built using [Dagster](https://github.com/dagster-io/dagster)
-- Interactive viz using [Panel](https://panel.holoviz.org/gallery/index.html) + [Holoviews](https://holoviews.org/) (coming soon)
-- Conclusion and more
 
 ### Environment setup using conda:
 
