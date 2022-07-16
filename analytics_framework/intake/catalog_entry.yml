@@ -10,10 +10,10 @@ sources:
     args:
       urlpath: "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
 
-  conutry_overview:
-    driver: json
+  twilio_stock_price:
+    driver: csv
     metadata: {
-      "source url": "https://data.world/badosa/uneces-country-overview"
+      "source url": "https://www.kaggle.com/datasets/sayantikabanik/twilio-stock-price-twlo20162021"
     }
     args:
-      urlpath: "https://data.world/badosa/uneces-country-overview/file/unece.json"
+      urlpath: "{{CATALOG_DIR}}/data/TWLO_stock.csv"
