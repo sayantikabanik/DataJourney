@@ -1,0 +1,10 @@
+repos:
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks'
+    rev: v4.2.0
+    hooks:
+    -   id: check-yaml # checks yaml files for parseable syntax
+    -   id: check-toml # checks toml files for parseable syntax
+    -   id: end-of-file-fixer # ensures that a file is either empty, or ends with one newline
+    -   id: trailing-whitespace # trims trailing whitespace
+    -   id: detect-private-key # detects the presence of private keys
+        
