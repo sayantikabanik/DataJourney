@@ -20,7 +20,20 @@ conda env create -f environment.yml
 conda activate journey
 ```
 
-#### Install the package locally 
+#### Install the package locally
 ```shell
 pip install -e .
 ```
+
+### About pre-commit-hooks and activating 🔌
+Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details 🗒](https://pre-commit.com/)
+```python
+pip install pre-commit
+pre-commit install
+```
+#### Usage
+> commit your changes
+- Check for errors, hooks format the code by default
+- Add the formatted files to Git
+- Commit changes
+- Push the changes
