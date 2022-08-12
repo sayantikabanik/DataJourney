@@ -6,6 +6,7 @@ The example datasets are openly available online, metadata info is present in th
 - Packaging framework added
 - Conda environment added
 - GitHub actions configured
+- Pre-commit hooks configured for code linting/formating 
 - Reading data from online sources using [intake](https://github.com/intake/intake)
 - Simple pipeline built using [Dagster](https://github.com/dagster-io/dagster)
 
