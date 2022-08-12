@@ -32,7 +32,7 @@ pip install pre-commit
 pre-commit install
 ```
 #### Usage
-> commit your changes
+- Commit your changes
 - Check for errors, hooks format the code by default
 - Add the formatted files to Git
 - Commit changes
