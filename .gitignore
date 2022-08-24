@@ -130,3 +130,4 @@ dmypy.json
 
 #packaging files
 .idea/
+.DS_Store
