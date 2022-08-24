@@ -55,4 +55,4 @@ cd analytics_framework/dashboard
 ```shell
 python simple_app.py
 ```
-![Panel app output](./output/panel_app.png)
+![Panel app output](./output/panel_app_stock.png)
