@@ -9,7 +9,7 @@ The example datasets are openly available online, metadata info is present in th
 - Pre-commit hooks configured for code linting/formating
 - Reading data from online sources using [intake](https://github.com/intake/intake)
 - Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)
-- Stock price dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)
+- Dashboarding using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)
 
 ### Environment setup using conda:
 
