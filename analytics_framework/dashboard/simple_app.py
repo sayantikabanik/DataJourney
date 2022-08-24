@@ -46,7 +46,7 @@ if __name__ == "__main__":
     pn.serve(
         obj.plot(),
         port=5006,
-        # NOTE: not a good practice to allow all the traffic, update as per requirement
+        # NOTE: not a good practice to allow all the traffic, use non-wildcard values to restrict access explicitly
         websocket_origin=['*'],
         autoreload=True,
         start=True,
