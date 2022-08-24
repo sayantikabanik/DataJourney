@@ -35,7 +35,7 @@ class Base:
 
     def plot(self):
         view = pn.template.FastListTemplate(
-            site="Twilio stock analysis",
+            site="Twilio stock price viz",
             main=[self.analysis_twilio_stock()]
         )
         return view
