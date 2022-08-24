@@ -19,6 +19,8 @@ The example datasets are openly available online, metadata info is present in th
 #### Create a conda environment
 ```shell
 conda env create -f environment.yml
+```
+```shell
 conda activate journey
 ```
 
@@ -29,8 +31,10 @@ pip install -e .
 
 #### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details 🗒](https://pre-commit.com/)
-```python
+```shell
 pip install pre-commit
+```
+```shell
 pre-commit install
 ```
 #### How to run the applications?
@@ -38,6 +42,8 @@ pre-commit install
 - Dagster UI app
 ```shell
 cd analytics_framework/pipeline
+```
+```shell
 dagit -f process.py
 ```
 ![Dagit UI output](./output/dagit_ui.png)
@@ -45,6 +51,8 @@ dagit -f process.py
 - Panel app
 ```shell
 cd analytics_framework/dashboard
+```
+```shell
 python simple_app.py
 ```
 ![Panel app output](./output/panel_app.png)
