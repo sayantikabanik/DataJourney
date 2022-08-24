@@ -6,9 +6,10 @@ The example datasets are openly available online, metadata info is present in th
 - Packaging framework added
 - Conda environment added
 - GitHub actions configured
-- Pre-commit hooks configured for code linting/formating 
+- Pre-commit hooks configured for code linting/formating
 - Reading data from online sources using [intake](https://github.com/intake/intake)
-- Simple pipeline built using [Dagster](https://github.com/dagster-io/dagster)
+- Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)
+- Dashboarding using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)
 
 ### Environment setup using conda:
 
@@ -18,6 +19,8 @@ The example datasets are openly available online, metadata info is present in th
 #### Create a conda environment
 ```shell
 conda env create -f environment.yml
+```
+```shell
 conda activate journey
 ```
 
@@ -28,7 +31,26 @@ pip install -e .
 
 #### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details 🗒](https://pre-commit.com/)
-```python
-pip install pre-commit
+
+```shell
 pre-commit install
 ```
+#### How to run the applications?
+
+- Dagster UI app
+```shell
+cd analytics_framework/pipeline
+```
+```shell
+dagit -f process.py
+```
+![Dagit UI output](./output/dagit_ui.png)
+
+- Panel app
+```shell
+cd analytics_framework/dashboard
+```
+```shell
+python simple_app.py
+```
+![Panel app output](./output/panel_app_stock.png)
