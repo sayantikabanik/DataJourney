@@ -31,9 +31,7 @@ pip install -e .
 
 #### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details 🗒](https://pre-commit.com/)
-```shell
-pip install pre-commit
-```
+
 ```shell
 pre-commit install
 ```
