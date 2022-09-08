@@ -17,21 +17,21 @@ def read_stock_price_data():
 
 
 @op
-def clean_column_names(df_raw):
-    df_twlo_clean = df_raw.rename(
-                        columns={'1. open': 'open',
-                                 '2. high': 'high',
-                                 '3. low': 'low',
-                                 '4. close': 'close',
-                                 '5. volume': 'volume'}, inplace=False)
-    logger.info(f"Updated dataframe: {df_twlo_clean.describe()}")
-    return df_twlo_clean
+def rolling_average(df_raw):
+    simple_rolling_avg = df_raw['close'].rolling(30).mean() # rolling avg for 30 days
+    logger.info(f"Simple stock closing price rolling avg for 300 days: {simple_rolling_avg}")
+
+
+@op
+def statistical_info(df_raw):
+    logger.info(f"Stock price statistical info", df_raw.describe())
 
 
 @job
 def compute():
     df_raw = read_stock_price_data()
-    df_updated = clean_column_names(df_raw)
+    result_simple_rolling_avg = rolling_average(df_raw)
+    result_statistical_value = statistical_info(df_raw)
 
 
 if __name__ == "__main__":
