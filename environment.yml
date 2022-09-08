@@ -26,3 +26,5 @@ dependencies:
   - holoviews
   - scikit-learn
   - aiohttp
+  - pip:
+    - mitoinstaller
