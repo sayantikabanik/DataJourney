@@ -22,16 +22,10 @@ def rolling_average(df_raw):
     logger.info(f"Simple stock closing price rolling avg for 300 days: {simple_rolling_avg}")
 
 
-@op
-def statistical_info(df_raw):
-    logger.info(f"Stock price statistical info", df_raw.describe())
-
-
 @job
 def compute():
     df_raw = read_stock_price_data()
     result_simple_rolling_avg = rolling_average(df_raw)
-    result_statistical_value = statistical_info(df_raw)
 
 
 if __name__ == "__main__":
