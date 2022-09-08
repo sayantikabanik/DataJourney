@@ -3,14 +3,14 @@ Tutorial featuring Data engineering workflow and Open Source tools and technolog
 The example datasets are openly available online, metadata info is present in the `intake` catalog
 
 ### 🛠 Current workflows covered (✨ represents: experimental)
-✅ Packaging framework added
-✅ Conda environment added
-✅ GitHub actions configured
-✅ Pre-commit hooks configured for code linting/formating
-✅ Reading data from online sources using [intake](https://github.com/intake/intake)
-✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)
-✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)
-✨ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)
+✅ Packaging framework added\
+✅ Conda environment added\
+✅ GitHub actions configured\
+✅ Pre-commit hooks configured for code linting/formating\
+✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
+✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
+✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
+✨ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)\
 
 #### Codespaces configured
 ![Screenshot 2022-08-29 at 3 41 12 PM (2)](https://user-images.githubusercontent.com/17350312/187180872-881322ed-dfc7-478b-bd07-5fefc1642cb5.png)
@@ -39,9 +39,9 @@ Just like the name suggests, pre-commit-hooks are designed to format the code ba
 ```shell
 pre-commit install
 ```
-#### How to run the applications?
+### How to run the applications?
 
-- Dagster UI app
+#### Dagster UI
 ```shell
 cd analytics_framework/pipeline
 ```
@@ -50,7 +50,7 @@ dagit -f process.py
 ```
 ![Dagit UI output](./output/dagit_ui.png)
 
-- Panel app
+#### Panel app
 ```shell
 cd analytics_framework/dashboard
 ```
@@ -59,7 +59,7 @@ python simple_app.py
 ```
 ![Panel app output](./output/panel_app_stock.png)
 
-- Mito
+#### Mito
 
 Before running the jupyter notebook `doc/mito_exp.ipynb`, run the below command
 in your terminal to enable the installer. Might take some time to run.
