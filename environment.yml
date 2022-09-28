@@ -6,7 +6,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
-  - intake
+  - intake=0.6.5
   - pre-commit
   - matplotlib
   - numpy
