@@ -58,7 +58,7 @@ cd analytics_framework/dashboard
 python simple_app.py
 ```
 *NOTE:*
-The dashboard generated is exported as HTML and saved as `stock_price_dashboard.html`
+The dashboard generated is exported into HTML format and saved as `stock_price_dashboard.html`
 
 ![Panel app output](./output/panel_app_stock.png)
 
