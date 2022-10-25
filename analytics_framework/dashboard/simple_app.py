@@ -3,6 +3,7 @@ import panel as pn
 import holoviews as hv
 from bokeh.models import HoverTool
 from analytics_framework.reusable_functions.intake_cf import initiate_catalog
+
 hv.extension('bokeh')
 
 
@@ -24,14 +25,16 @@ class Base:
         date_col = np.array(simple_table['date'], dtype=np.datetime64)
         open_ = hv.Curve((date_col, df_stock_data.open),
                          'Date', 'Stock price ($)', label='open').opts(
-                          tools=[hover_open])
+            tools=[hover_open])
         close_ = hv.Curve((date_col, df_stock_data.close),
                           'Date', 'Stock price ($)', label='close').opts(
-                          tools=[hover_close])
+            tools=[hover_close])
         plot_curve_open_close = (open_ * close_).opts(width=900,
                                                       legend_position='top_left')
-
-        return pn.Column(simple_table, plot_curve_open_close)
+        app_obj = pn.Column(simple_table, plot_curve_open_close)
+        # exporting panel dashboard as html
+        app_obj.save('stock_price_dashboard.html', embed=True)
+        return app_obj
 
     def plot(self):
         view = pn.template.FastListTemplate(
@@ -51,4 +54,4 @@ if __name__ == "__main__":
         autoreload=True,
         start=True,
         location=True,
-        )
+    )
