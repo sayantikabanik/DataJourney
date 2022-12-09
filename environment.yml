@@ -28,3 +28,4 @@ dependencies:
   - aiohttp
   - pip:
     - mitoinstaller
+    - quarto
