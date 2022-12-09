@@ -10,7 +10,7 @@ The example datasets are openly available online, metadata info is present in th
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
 ✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
-✨ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)
+✨ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)\
 ✨ [Quarto](https://quarto.org/) experiements coming up [WIP]
 
 #### Codespaces configured
