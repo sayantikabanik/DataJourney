@@ -17,6 +17,7 @@ The example datasets are openly available online, metadata info is present in th
 
 ⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats \
 📬 Checkout daily reports generated: [PDF Report](https://github.com/sayantikabanik/DataJourney/blob/github-repo-stats/sayantikabanik/DataJourney/latest-report/report.pdf)
+🗳️ Supplementary details regarding stats/reports generated present [here](https://github.com/sayantikabanik/DataJourney/tree/github-repo-stats/sayantikabanik/DataJourney)
 
 #### Codespaces configured
 ![Screenshot 2022-08-29 at 3 41 12 PM (2)](https://user-images.githubusercontent.com/17350312/187180872-881322ed-dfc7-478b-bd07-5fefc1642cb5.png)
