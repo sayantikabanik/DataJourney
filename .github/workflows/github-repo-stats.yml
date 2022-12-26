@@ -1,5 +1,4 @@
-name: github-repo-stats-stash
-
+name: github-repo-stats
 on:
   schedule:
     # Run this once per day, towards the end of the day for keeping the most
@@ -9,7 +8,7 @@ on:
 
 jobs:
   j1:
-    name: github-repo-stats-stash
+    name: github-repo-stats
     runs-on: ubuntu-latest
     steps:
       - name: run-ghrs
