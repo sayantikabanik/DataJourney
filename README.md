@@ -15,8 +15,8 @@ The example datasets are openly available online, metadata info is present in th
 
 ### 📊 Repository stats 
 
-⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats \
-⏳ Configured to run daily at 23:55:00 IST
+⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats\
+⏳ Configured to run daily at 23:55:00 IST\
 📬 Checkout daily reports generated: [PDF Report](https://github.com/sayantikabanik/DataJourney/blob/github-repo-stats/sayantikabanik/DataJourney/latest-report/report.pdf)\
 🗳️ Supplementary details regarding stats/reports generated present [here](https://github.com/sayantikabanik/DataJourney/tree/github-repo-stats/sayantikabanik/DataJourney)
 
