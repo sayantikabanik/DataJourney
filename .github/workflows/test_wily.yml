@@ -12,14 +12,14 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.13.0
+          python-version: 3.10
       - name: Install Wily
         run: pip install wily==1.20.0
       - name: Build cache and diff
