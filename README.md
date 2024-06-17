@@ -23,7 +23,7 @@ The example datasets are openly available online, metadata info is present in th
 
 ### Dataset metadata/citations
 
-- Global coral bleaching dataset [Additional Info](https://www.bco-dmo.org/dataset/773466)
+- Global coral bleaching dataset: [Additional Info](https://www.bco-dmo.org/dataset/773466)
 ```txt
 van Woesik, R., Burkepile, D. (2022) Bleaching and environmental data for global coral reef sites from 1980-2020. Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 2) Version Date 2022-10-14 [if applicable, indicate subset used]. doi:10.26008/1912/bco-dmo.773466.2 [access date]
 Terms of Use
