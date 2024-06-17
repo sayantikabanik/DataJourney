@@ -21,6 +21,15 @@ The example datasets are openly available online, metadata info is present in th
 📬 Checkout daily reports generated: [PDF Report](https://github.com/sayantikabanik/DataJourney/blob/github-repo-stats/sayantikabanik/DataJourney/latest-report/report.pdf)\
 🗳️ Supplementary details regarding stats/reports generated present [here](https://github.com/sayantikabanik/DataJourney/tree/github-repo-stats/sayantikabanik/DataJourney)
 
+### Dataset metadata/citations
+
+- Global coral bleaching dataset 
+```txt
+van Woesik, R., Burkepile, D. (2022) Bleaching and environmental data for global coral reef sites from 1980-2020. Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 2) Version Date 2022-10-14 [if applicable, indicate subset used]. doi:10.26008/1912/bco-dmo.773466.2 [access date]
+Terms of Use
+This dataset is licensed under Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
+```
+
 #### Codespaces configured
 *Currently new pre-build images are disabled due to limited storage*
 
