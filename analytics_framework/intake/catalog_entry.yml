@@ -17,3 +17,11 @@ sources:
     }
     args:
       urlpath: "{{CATALOG_DIR}}/data/TWLO_stock.csv"
+
+  global_coral_bleaching:
+    driver: csv
+    metadata: {
+      "source url": "https://www.bco-dmo.org/dataset/773466"
+    }
+    args:
+      urlpath: "{{CATALOG_DIR}}/data/global_bleaching_environmental.csv"
