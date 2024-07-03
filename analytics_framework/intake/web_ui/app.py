@@ -64,10 +64,12 @@ def load_yaml():
 @app.route('/')
 def index():
     data = load_yaml()
-    urls = []
+    sources = []
     for key, value in data.items():
-        urls.append(value['metadata']['source_url'])
-    return render_template('index.html', urls=urls)
+        source_name = key
+        source_url = value['metadata']['source_url']
+        sources.append({'name': source_name, 'url': source_url})
+    return render_template('index.html', sources=sources)
 
 if __name__ == '__main__':
     app.run(debug=True)

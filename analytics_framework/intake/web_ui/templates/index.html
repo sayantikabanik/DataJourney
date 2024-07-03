@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>URL List</title>
+    <title>Source URLs</title>
 </head>
 <body>
     <h2>Data sources available with DataJourney</h2>
-    <ul>
-        {% for url in urls %}
-            <li><a href="{{ url }}" target="_blank">{{ url }}</a></li>
+    <table border="1">
+        <tr>
+            <th>Source Name</th>
+            <th>URL</th>
+        </tr>
+        {% for source in sources %}
+        <tr>
+            <td>{{ source.name }}</td>
+            <td><a href="{{ source.url }}" target="_blank">{{ source.url }}</a></td>
+        </tr>
         {% endfor %}
-    </ul>
+    </table>
 </body>
 </html>
