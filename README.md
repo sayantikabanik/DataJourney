@@ -94,3 +94,11 @@ To explore further visit [trymito.io](https://docs.trymito.io/)
 python -m mitoinstaller install
 ```
 ![mito output](./output/mito_graph.png "Graph generated via mitosheet") ![mito output operation](./output/mito_operations.png "Operations performed via mitosheet")
+
+
+#### Display all data sources present via web UI
+
+```shell
+python app.py
+```
+<img width="751" alt="Screenshot 2024-07-03 at 9 27 30 AM" src="https://github.com/sayantikabanik/DataJourney/assets/17350312/180ae07b-3525-4466-bfe7-bc6d2284391b">
