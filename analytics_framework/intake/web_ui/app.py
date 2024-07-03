@@ -1,4 +1,5 @@
 import yaml
+import ast
 from flask import Flask, request, render_template_string
 
 app = Flask(__name__)
@@ -9,9 +10,8 @@ def load_yaml(file_path):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
 
-
 # Load the YAML file
-data = load_yaml('test.yml')  # Change 'data.yml' to your YAML file name
+data = load_yaml('../catalog_entry.yml')
 
 
 # Route to display the form and entries
@@ -25,13 +25,15 @@ def index():
     return render_template_string('''
         <html>
         <body>
-            <form method="post">
-                <h2>Select Entries:</h2>
-                {% for key in data.keys() %}
-                    <input type="checkbox" name="entries" value="{{ key }}">{{ key }}<br>
-                {% endfor %}
-                <input type="submit" value="Submit">
-            </form>
+        <form method="post" action="/submit">
+        {% for key, subkeys in data.items() %}
+            <strong>{{ key }}</strong><br>
+            {% for key2, subkey in subkeys.items() %}
+                 <input type="checkbox" name="entries" value="{{ subkey.metadata }}">{{ subkey.metadata }}<br>
+            {% endfor %}
+        {% endfor %}
+        <input type="submit" value="Submit">
+        </form>
 
             {% if selected_entries %}
                 <h2>Selected Entries:</h2>

@@ -5,7 +5,7 @@ sources:
   address_sample:
     driver: csv
     metadata: {
-        "source url": "https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html"
+        source_url: "https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html"
     }
     args:
       urlpath: "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
@@ -13,7 +13,7 @@ sources:
   twilio_stock_price:
     driver: csv
     metadata: {
-      "source url": "https://www.kaggle.com/datasets/sayantikabanik/twilio-stock-price-twlo20162021"
+      source_url: "https://www.kaggle.com/datasets/sayantikabanik/twilio-stock-price-twlo20162021"
     }
     args:
       urlpath: "{{CATALOG_DIR}}/data/TWLO_stock.csv"
@@ -21,7 +21,7 @@ sources:
   global_coral_bleaching:
     driver: csv
     metadata: {
-      "source url": "https://www.bco-dmo.org/dataset/773466"
+      source_url: "https://www.bco-dmo.org/dataset/773466"
     }
     args:
       urlpath: "{{CATALOG_DIR}}/data/global_bleaching_environmental.csv"
