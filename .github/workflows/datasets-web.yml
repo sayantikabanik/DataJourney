@@ -32,10 +32,9 @@ jobs:
           channel-priority: strict
 
       - name: Change directory to Flask app
-        run: cd analytics_framework/intake/web_ui
-
-      - name: Run Flask command
-        run: python app.py
+        run: |
+          cd analytics_framework/intake/web_ui
+          python app.py
 
       - name: Wait for Flask app to start
         run: sleep 10
