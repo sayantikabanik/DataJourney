@@ -1,0 +1,53 @@
+name: Datasets
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main, deploy_app ]
+  pull_request:
+    branches: [ main, deploy_app ]
+
+
+jobs:
+  Env_check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up env
+        uses: conda-incubator/setup-miniconda@master
+        with:
+          miniforge-variant: Miniforge3
+          miniforge-version: latest
+          activate-environment: journey
+          environment-file: environment.yml
+          python-version: ${{ matrix.python-version }}
+          auto-activate-base: false
+          channels: conda-forge
+          channel-priority: strict
+
+      - name: Change directory to Flask app
+        run: cd analytics_framework/intake/web_ui
+
+      - name: Run Flask command
+        run: python app.py
+
+      - name: Wait for Flask app to start
+        run: sleep 10
+
+      - name: Fetch Flask app page and save as HTML
+        run: |
+          curl http://127.0.0.1:5000 > result.html
+          mkdir -p artifacts
+          mv result.html artifacts/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: html-artifact
+          path: artifacts/result.html
