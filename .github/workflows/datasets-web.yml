@@ -34,7 +34,7 @@ jobs:
       - name: Change directory to Flask app, run app, save as artifact
         run: |
           cd analytics_framework/intake/web_ui
-          nohup python app.py
+          nohup flask run &
           curl http://127.0.0.1:5000 > result.html
           mkdir -p artifacts
           mv result.html artifacts/
