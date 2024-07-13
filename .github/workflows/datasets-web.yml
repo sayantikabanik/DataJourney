@@ -32,12 +32,14 @@ jobs:
           channel-priority: strict
 
       - name: Change directory to Flask app, run app, save as artifact
+        continue-on-error: true
         run: |
           cd analytics_framework/intake/web_ui
-          nohup flask run &
+          python app.py
           curl http://127.0.0.1:5000 > result.html
           mkdir -p artifacts
           mv result.html artifacts/
+          exit 1
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
