@@ -13,8 +13,8 @@ The example datasets are openly available online, metadata info is present in th
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
 ✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
 ✅ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)\
-✨ [WIP] Analysing source code complexity using [Wily](https://wily.readthedocs.io/en/latest/index.html)\
-✨ [WIP]: Interesting viz(s) using [Quarto](https://quarto.org/)
+✅ Analysing source code complexity using [Wily](https://wily.readthedocs.io/en/latest/index.html)\
+✨ [WIP]: Exploring FastHTML and replacing Flask app
 
 ### 📊 Repository stats 
 
