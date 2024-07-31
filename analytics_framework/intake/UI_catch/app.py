@@ -21,6 +21,7 @@ def home():
         Head(Title('Welcome to DataJourney'), Link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css')),
         Body(
             H2("Data Source Present in this repository"),
+            P(Mark("ℹ️ This is a web interface to the existing intake catalog")),
             Table(
                 Tr(
                     Th(B("Dataset Name")),

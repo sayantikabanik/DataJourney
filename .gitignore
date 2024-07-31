@@ -131,3 +131,6 @@ dmypy.json
 #packaging files
 .idea/
 .DS_Store
+
+#FastHTML files
+.sesskey
