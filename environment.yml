@@ -27,6 +27,7 @@ dependencies:
   - holoviews
   - scikit-learn
   - aiohttp
+  - python-fasthtml
   - pip:
     - mitoinstaller
     - quarto
