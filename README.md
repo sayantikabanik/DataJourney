@@ -105,13 +105,15 @@ python -m mitoinstaller install
 cd intake/web_ui_fasthtml
 python app.py
 ```
-```commandline
+```python
 Link: http://localhost:5001
-INFO:     Will watch for changes in these directories: ['/Users/sayantikabanik/DataJourney/analytics_framework/intake/web_ui_fasthtml']
+INFO:     Will watch for changes in these directories: ['../DataJourney/analytics_framework/intake/web_ui_fasthtml']
 INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
 INFO:     Started reloader process [20071] using WatchFiles
 INFO:     Started server process [20075]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
-<img width="751" alt="Screenshot 2024-07-03 at 9 27 30 AM" src="https://github.com/sayantikabanik/DataJourney/assets/17350312/180ae07b-3525-4466-bfe7-bc6d2284391b">
+![Screenshot 2024-07-31 at 4 42 44 PM](https://github.com/user-attachments/assets/a1c977c9-1698-416c-8ac3-15fdbffa0b0a)
+
+
