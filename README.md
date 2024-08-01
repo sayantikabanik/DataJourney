@@ -2,8 +2,6 @@
 Tutorial featuring Data engineering workflow and Open Source tools and technologies.
 The example datasets are openly available online, metadata info is present in the `intake` catalog
 
-🪸 **upcoming: analysis on coral bleaching**
-
 ### 🛠 Current workflows covered (✨ represents: experimental)
 ✅ Packaging framework added\
 ✅ Conda environment added\
