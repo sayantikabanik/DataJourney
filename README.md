@@ -8,15 +8,17 @@ The example datasets are openly available online, metadata info is present in th
 ✅ Packaging framework added\
 ✅ Conda environment added\
 ✅ GitHub actions configured\
-✅ Pre-commit hooks configured for code linting/formating\
+✅ Pre-commit hooks configured for code linting/formatting\
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
 ✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
 ✅ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)\
 ✅ Analysing source code complexity using [Wily](https://wily.readthedocs.io/en/latest/index.html)\
-✨ [WIP]: Exploring FastHTML and replacing Flask app
+✅ Web UI build on [Flask](https://flask.palletsprojects.com/en/3.0.x/) \
+✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
+✨ [WIP]: Deployment of FastHTML application
 
-### 📊 Repository stats 
+### 📊 Repository stats
 
 ⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats \
 ⏳ Configured to run daily at 23:55:00 IST\
@@ -99,6 +101,17 @@ python -m mitoinstaller install
 #### Display all data sources present via web UI
 
 ```shell
+# Instructions specific to FastHTML app
+cd intake/web_ui_fasthtml
 python app.py
+```
+```commandline
+Link: http://localhost:5001
+INFO:     Will watch for changes in these directories: ['/Users/sayantikabanik/DataJourney/analytics_framework/intake/web_ui_fasthtml']
+INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
+INFO:     Started reloader process [20071] using WatchFiles
+INFO:     Started server process [20075]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
 ```
 <img width="751" alt="Screenshot 2024-07-03 at 9 27 30 AM" src="https://github.com/sayantikabanik/DataJourney/assets/17350312/180ae07b-3525-4466-bfe7-bc6d2284391b">
