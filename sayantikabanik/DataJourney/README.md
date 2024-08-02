@@ -1,4 +1,4 @@
-## github-repo-stats for sayantikabanik/DataJourney 
+## github-repo-stats for sayantikabanik/DataJourney
 
 - statistics for repository https://github.com/sayantikabanik/DataJourney
 - managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats
