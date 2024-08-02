@@ -2,6 +2,9 @@ name: code-complexity-check
 
 on:
   pull_request:
+    branches: "*"
+  push:
+    branches: [ main ]
 
 jobs:
 
