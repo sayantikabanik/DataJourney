@@ -3,13 +3,9 @@ name: code-complexity-check
 on:
   pull_request:
     branches: "*"
-  push:
-    branches: [ main ]
-
+    
 jobs:
-
   evaluate-complexity:
-    name: Evaluate Code complexity
     runs-on: ubuntu-latest
 
     steps:
