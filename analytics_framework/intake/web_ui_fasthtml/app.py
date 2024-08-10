@@ -29,11 +29,10 @@ def home():
                 ),
                 Tr(
                     Td(Ul(name) for name in source_name),
-                    Td(Ul(A(url)) for url in source_url)
+                    Td(A(Ul(url), href=url, target="_blank") for url in source_url)
                 )
             )
         )
     )
-
 
 serve()
