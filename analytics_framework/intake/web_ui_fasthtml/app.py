@@ -35,6 +35,4 @@ def home():
         )
     )
 
-
-
 serve()
