@@ -3,8 +3,8 @@ name: Deploy DataJourney Stats
 
 on:
   # Runs on pushes targeting the default branch
-  push:
-    branches: ["github-repo-stats"]
+  # push:
+  #   branches: ["github-repo-stats"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
