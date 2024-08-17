@@ -37,7 +37,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./DataJourney/latest-report/report.html
+          publish_dir: ./latest-report/report.html
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
       # - name: Upload artifact
