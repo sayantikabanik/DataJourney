@@ -21,16 +21,14 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: github-repo-stats
-      - name: Prepare deployment directory
+      - name: Rename file to index.html
         run: |
-          mkdir deployment
-          cp ./sayantikabanik/DataJourney/latest-report/report.html deployment/index.html
+          mv ./sayantikabanik/DataJourney/latest-report/report.html ./sayantikabanik/DataJourney/latest-report/index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./sayantikabanik/DataJourney/latest-report
-          destination_branch: gh-pages
 
 
 # # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
