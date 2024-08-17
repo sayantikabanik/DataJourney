@@ -17,13 +17,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout branch-a
       - name: Checkout github-repo-stats
         uses: actions/checkout@v3
         with:
           ref: github-repo-stats
-
-      # Step 2: Deploy to GitHub Pages
+      - name: Prepare deployment directory
+        run: |
+          mkdir deployment
+          cp ./sayantikabanik/DataJourney/latest-report/report.html deployment/index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
