@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/sayantikabanik/DataJourney,30,12
+/sayantikabanik/DataJourney/blob/main/README.md,6,2
+/sayantikabanik/DataJourney/tree/main/.github,6,2
+/sayantikabanik/DataJourney/tree/main/analytics_framework,5,2
+/sayantikabanik/DataJourney/blob/main/analytics_framework/pipeline/process.py,4,2
+/sayantikabanik/DataJourney/blob/main/analytics_framework/intake/web_ui_fasthtml/app.py,4,1
+/sayantikabanik/DataJourney/blob/main/analytics_framework/intake/web_ui_flask/app.py,4,1
+/sayantikabanik/DataJourney/tree/main/analytics_framework/intake,4,1
+/sayantikabanik/DataJourney/tree/main/analytics_framework/intake/web_ui_flask,4,1
+/sayantikabanik/DataJourney/blob/main/environment.yml,3,1
