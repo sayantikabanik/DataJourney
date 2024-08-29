@@ -25,7 +25,7 @@ The example datasets are openly available online, metadata info is present in th
 
 ⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats \
 ⏳ Configured to run daily at 23:55:00 IST\
-📬 Checkout daily reports generated: (DataJourney Stats on Web)[https://sayantikabanik.github.io/DataJourney/]
+📬 Checkout daily reports generated: [DataJourney Stats on Web](https://sayantikabanik.github.io/DataJourney/)
 
 ### Dataset metadata/citations
 
