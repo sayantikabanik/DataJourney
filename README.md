@@ -1,3 +1,8 @@
+[![CI](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml)
+[![code-complexity-check](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml/badge.svg?event=pull_request)](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml)
+[![github-repo-stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml)
+[![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
+
 ### 🚌 DataJourney
 Tutorial featuring Data engineering workflow and Open Source tools and technologies.
 The example datasets are openly available online, metadata info is present in the `intake` catalog
@@ -20,8 +25,7 @@ The example datasets are openly available online, metadata info is present in th
 
 ⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats \
 ⏳ Configured to run daily at 23:55:00 IST\
-📬 Checkout daily reports generated: [PDF Report](https://github.com/sayantikabanik/DataJourney/blob/github-repo-stats/sayantikabanik/DataJourney/latest-report/report.pdf)\
-🗳️ Supplementary details regarding stats/reports generated present [here](https://github.com/sayantikabanik/DataJourney/tree/github-repo-stats/sayantikabanik/DataJourney)
+📬 Checkout daily reports generated: (DataJourney Stats on Web)[https://sayantikabanik.github.io/DataJourney/]
 
 ### Dataset metadata/citations
 
