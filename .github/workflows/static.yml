@@ -35,16 +35,16 @@ jobs:
         run: |
          mv report.html index.html
         working-directory: sayantikabanik/DataJourney/latest-report
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: Upload HTML files to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'sayantikabanik/DataJourney/latest-report/*.html'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          path: sayantikabanik/DataJourney/latest-report/*.html
 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: sayantikabanik/DataJourney/latest-report/
       # - name: Deploy to GitHub Pages
       #   uses: peaceiris/actions-gh-pages@v3
       #   with:
