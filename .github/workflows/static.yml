@@ -30,14 +30,16 @@ jobs:
           pwd
       - name: List files in the current directory
         run: ls -al
+        working-directory: sayantikabanik/DataJourney/latest-report
       - name: Rename the file to index.html
         run: |
          mv $BUILD_DIR/report.html $BUILD_DIR/index.html
+        working-directory: sayantikabanik/DataJourney/latest-report
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./sayantikabanik/DataJourney/latest-report
+          publish_dir: sayantikabanik/DataJourney/latest-report
 
 
 # # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
