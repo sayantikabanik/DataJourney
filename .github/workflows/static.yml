@@ -40,7 +40,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'sayantikabanik/DataJourney/latest-report/index.html'
+          path: 'index.html'
+          working-directory: sayantikabanik/DataJourney/latest-report
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
