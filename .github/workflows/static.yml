@@ -30,7 +30,7 @@ jobs:
           pwd
       - name: Rename the file to index.html
         run: |
-          mv report.html index.html
+          mv ./report.html ./index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
