@@ -24,9 +24,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: github-repo-stats
-      - name: Rename file to index.html
+      - name: Change directory and print it
         run: |
-          mv ./sayantikabanik/DataJourney/latest-report/report.html ./sayantikabanik/DataJourney/latest-report/index.html
+          cd sayantikabanik/DataJourney/latest-report
+          pwd
+      - name: Rename the file to index.html
+        run: |
+          mv report.html index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
