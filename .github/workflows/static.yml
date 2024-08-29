@@ -33,7 +33,7 @@ jobs:
         working-directory: sayantikabanik/DataJourney/latest-report
       - name: Rename the file to index.html
         run: |
-         mv /report.html /index.html
+         mv report.html index.html
         working-directory: sayantikabanik/DataJourney/latest-report
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
