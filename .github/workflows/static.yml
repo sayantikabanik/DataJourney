@@ -42,7 +42,7 @@ jobs:
         with:
           # Upload entire repository
           path: 'index.html'
-        working-directory: sayantikabanik/DataJourney/latest-report
+          working-directory: sayantikabanik/DataJourney/latest-report
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
