@@ -4,8 +4,7 @@
 [![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
 
 ### 🚌 DataJourney
-Tutorial featuring Data engineering workflow and Open Source tools and technologies.
-The example datasets are openly available online, metadata info is present in the `intake` catalog
+Demonstrates how businesses can effectively manage and utilize their data by harnessing the power of open-source technologies. As an open-source framework, it provides unparalleled flexibility, transparency, and efficiency throughout the data lifecycle from ingestion to actionable insights. By combining the power of open-source tools, DataJourney addresses complex data challenges and delivers scalable, adaptable solutions to meet evolving business needs.
 
 ### 🛠 Current workflows covered (✨ represents: experimental)
 ✅ Packaging framework added\
