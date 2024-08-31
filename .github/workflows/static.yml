@@ -2,9 +2,9 @@
 name: Deploy DataJourney Stats
 
 on:
-  #Runs on pushes targeting the default branch
-  push:
-    branches: ["github-repo-stats"]
+  # Scheduled to run daily, after an hour: post repo stats are generated
+  schedule:
+    - cron: "50 0 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
