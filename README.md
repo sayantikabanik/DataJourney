@@ -1,3 +1,9 @@
+<div style="text-align:center;">
+    <div style="width:auto; overflow:hidden; display:inline-block;">
+        <img src="https://github.com/user-attachments/assets/97ffb3bf-01c5-4c7b-8d9f-65f529bb6203" alt="GIF description" style="width:100%; height:auto; object-fit:cover;">
+    </div>
+</div>
+
 [![CI](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml)
 [![code-complexity-check](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml/badge.svg?event=pull_request)](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml)
 [![github-repo-stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml)
