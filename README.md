@@ -1,6 +1,6 @@
 <div style="text-align:center;">
     <div style="width:auto; overflow:hidden; display:inline-block;">
-        <img src="https://github.com/user-attachments/assets/97ffb3bf-01c5-4c7b-8d9f-65f529bb6203" alt="GIF description" style="width:100%; height:auto; object-fit:cover;">
+        <img src="https://github.com/user-attachments/assets/97ffb3bf-01c5-4c7b-8d9f-65f529bb6203" alt="DJ rocks" style="width:100%; height:auto; object-fit:cover;">
     </div>
 </div>
 
@@ -26,7 +26,6 @@ Built on open-source principles, the framework guides users through essential st
 ✅ Analysing source code complexity using [Wily](https://wily.readthedocs.io/en/latest/index.html)\
 ✅ Web UI build on [Flask](https://flask.palletsprojects.com/en/3.0.x/) \
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
-✨ [WIP]: Deployment of FastHTML application
 
 ### 📊 Repository stats
 
