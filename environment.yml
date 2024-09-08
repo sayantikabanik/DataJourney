@@ -31,3 +31,4 @@ dependencies:
   - pip:
     - mitoinstaller
     - quarto
+    - openai
