@@ -26,6 +26,7 @@ Built on open-source principles, the framework guides users through essential st
 ✅ Analysing source code complexity using [Wily](https://wily.readthedocs.io/en/latest/index.html)\
 ✅ Web UI build on [Flask](https://flask.palletsprojects.com/en/3.0.x/) \
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
+✅ Leverage AI models to analyse data [GitHub AI models Beta](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 
 ### 📊 Repository stats
 
@@ -123,5 +124,3 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 ![Screenshot 2024-07-31 at 4 42 44 PM](https://github.com/user-attachments/assets/a1c977c9-1698-416c-8ac3-15fdbffa0b0a)
-
-
