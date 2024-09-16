@@ -32,3 +32,4 @@ dependencies:
     - mitoinstaller
     - quarto
     - openai
+    - azure-ai-inference
