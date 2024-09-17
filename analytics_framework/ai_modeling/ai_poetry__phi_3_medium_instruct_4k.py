@@ -7,10 +7,6 @@ from azure.ai.inference import ChatCompletionsClient
 from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 
-# Data read via intake catalog
-CATALOG_LOC = Path.joinpath(INTAKE_LOC, "catalog_entry.yml")
-catalog = intake.open_catalog(CATALOG_LOC)
-
 token = os.environ["GITHUB_TOKEN"]
 endpoint = "https://models.inference.ai.azure.com"
 model_name = "Phi-3-medium-4k-instruct"
