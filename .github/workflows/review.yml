@@ -15,7 +15,7 @@ jobs:
     - name: Vale
       uses: errata-ai/vale-action@reviewdog
       with:
-        files: analytics_framework/ai_modeling
+        files: analytics_framework/ai_modeling/*.md
         vale_flags: --glob=!*/*-fr/*
         filter_mode: nofilter
         reporter: github-pr-check
