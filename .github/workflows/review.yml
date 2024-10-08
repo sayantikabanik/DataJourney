@@ -1,0 +1,23 @@
+name: Lint prose
+on:
+  pull_request:
+
+# manually trigger based on requirement
+  workflow_dispatch:
+
+jobs:
+  lint-prose:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Vale
+      uses: errata-ai/vale-action@reviewdog
+      with:
+        files: analytics_framework/ai_modeling
+        vale_flags: --glob=!*/*-fr/*
+        filter_mode: nofilter
+        reporter: github-pr-check
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
