@@ -21,11 +21,11 @@ Built on open-source principles, the framework guides users through essential st
 {✨= Experimental,
 ✅ = Implemented}
 
-✅ Packaging framework added\
-✅ Conda environment added\
-✅ GitHub actions configured\
-✅ Vale.sh configured at PR level\
-✅ Pre-commit hooks configured for code linting/formatting\
+✅ DJ is Designed keeping `Python Packaging framework` in mind\
+✅ `Conda` environment added\
+✅ `GitHub actions` configured\
+✅ `Vale.sh` configured at PR level\
+✅ `Pre-commit hooks` configured for code linting/formatting\
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
 ✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
