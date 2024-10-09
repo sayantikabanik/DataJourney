@@ -21,7 +21,7 @@ Built on open-source principles, the framework guides users through essential st
 {✨= Experimental,
 ✅ = Implemented}
 
-✅ DJ is Designed keeping `Python Packaging framework` in mind\
+✅ `Python Packaging framework` design principles\
 ✅ `Conda` environment added\
 ✅ `GitHub actions` configured\
 ✅ `Vale.sh` configured at PR level\
