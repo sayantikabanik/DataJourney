@@ -14,13 +14,14 @@ DataJourney demonstrates how organizations can effectively manage and utilize da
 
 Built on open-source principles, the framework guides users through essential steps—from **identifying** goals and **selecting tools** to **testing** and **customising** workflows. With its flexible, modular design, DataJourney can be tailored to individual needs, making it an invaluable toolkit for data professionals.
 
-### 🛠 Current workflows covered 
+### 🛠 Current workflows covered
 {✨= Experimental,
 ✅ = Implemented}
 
 ✅ Packaging framework added\
 ✅ Conda environment added\
 ✅ GitHub actions configured\
+✅ Vale.sh configured at PR level\
 ✅ Pre-commit hooks configured for code linting/formatting\
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
