@@ -1,15 +1,18 @@
+
+[![CI](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml)
+[![code-complexity-check](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml/badge.svg?event=pull_request)](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml)
+[![github-repo-stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml)
+[![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
+[![Lint prose](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml)
+
 <div style="text-align:center;">
     <div style="width:auto; overflow:hidden; display:inline-block;">
         <img src="https://github.com/user-attachments/assets/97ffb3bf-01c5-4c7b-8d9f-65f529bb6203" alt="DJ rocks" style="width:100%; height:auto; object-fit:cover;">
     </div>
 </div>
 
-[![CI](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml)
-[![code-complexity-check](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml/badge.svg?event=pull_request)](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml)
-[![github-repo-stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml)
-[![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
 
-### 🚌 DataJourney
+### 🚌 What's DataJourney?
 DataJourney demonstrates how organizations can effectively manage and utilize data by harnessing the power of open-source technologies. It's designed to help navigate the complex landscape of data tools, offering a structured approach to building **scalable**, and **reproducible** data workflows.
 
 Built on open-source principles, the framework guides users through essential steps—from **identifying** goals and **selecting tools** to **testing** and **customising** workflows. With its flexible, modular design, DataJourney can be tailored to individual needs, making it an invaluable toolkit for data professionals.
