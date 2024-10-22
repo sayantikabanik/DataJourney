@@ -5,11 +5,9 @@
 [![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
 [![Lint prose](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml)
 
-<div style="text-align:center;">
-    <div style="width:auto; overflow:hidden; display:inline-block;">
-        <img src="./assets/DataJourney_logo_svg/dj_darkmode.svg" alt="DJ rocks" style="width:100%; height:auto; object-fit:cover;">
-    </div>
-</div>
+<p align="center">
+  <img src="./assets/DataJourney_logo_svg/dj_darkmode.svg" alt="DJ rocks" style="width:500px; height:600px;">
+</p>
 
 
 ### 🚌 What's DataJourney?
