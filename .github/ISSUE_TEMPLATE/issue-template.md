@@ -1,16 +1,18 @@
 ---
 name: Issue template
-about: Please add details regarding your query
+about: Please add details regarding your query/idea
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-### Describe the issue
+#### 🩺 Describe the issue
 
-### Code example to reproduce the issue
+#### ℹ️ Code example to reproduce the issue
 
-### Error messages (if any)
+#### ⚙️ System settings/ version details
 
-### Anything else you would like to share?
+#### ❌ Error messages/logs (if any)
+
+#### 💡 Anything else you would like to share?
