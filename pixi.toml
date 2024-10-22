@@ -1,0 +1,39 @@
+[project]
+authors = ["sayantikabanik <sayantikabanik122@gmail.com>"]
+channels = ["conda-forge"]
+description = "Your Open-Source Data management framework"
+name = "journey"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.10.*"
+intake = "0.6.5.*"
+werkzeug = "2.2.2.*"
+pre-commit = "*"
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+pip = "*"
+pytest = "*"
+requests = "*"
+seaborn = "*"
+scipy = "*"
+scikit-learn = "*"
+statsmodels = "*"
+urllib3 = "*"
+hvplot = "*"
+dagster = "0.15.3.*"
+dagit = "0.15.3.*"
+panel = "*"
+holoviews = "*"
+aiohttp = "*"
+python-fasthtml = "*"
+
+[pypi-dependencies]
+mitoinstaller = "*"
+quarto = "*"
+openai = "*"
+azure-ai-inference = "*"
