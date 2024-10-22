@@ -2,7 +2,7 @@ name: Support DJ
 description: Support DataJourney/ Sponsor.
 title: "[Support DJ]: [Brief description]"
 labels: support
-assignees: ''
+assignees: DataJourney
 
 body:
   - type: markdown
