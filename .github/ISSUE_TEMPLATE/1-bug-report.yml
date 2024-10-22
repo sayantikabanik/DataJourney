@@ -1,0 +1,36 @@
+name: Bug Report
+description: Create a report to help improve DataJourney.
+title: "[Bug]: [Brief description of the issue]"
+labels: bug
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+        Please provide a clear and concise description of the bug.
+
+  - type: input
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      placeholder: e.g., 1. Go to '...'; 2. Click on '...'; 3. See error
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected Result
+      placeholder: What you expected to happen
+
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Actual Result
+      placeholder: What actually happened
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      placeholder: Any other details that may help us resolve the issue
