@@ -2,7 +2,7 @@ name: Bug Report
 description: Create a report to help improve DataJourney.
 title: "[Bug]: [Brief description of the issue]"
 labels: bug
-assignees: ''
+assignees: DataJourney
 
 body:
   - type: markdown
