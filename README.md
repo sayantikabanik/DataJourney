@@ -1,9 +1,13 @@
+<h1 align="center">
 
+[![License](https://img.shields.io/badge/license-CC0%201.0%20Universal-yellowgreen)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![CI](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml)
 [![code-complexity-check](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml/badge.svg?event=pull_request)](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml)
 [![github-repo-stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml)
 [![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
 [![Lint prose](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml)
+
+</h1>
 
 <p align="center">
   <img src="./assets/DataJourney_logo_svg/dj_darkmode.svg" alt="DJ rocks" style="width:500px; height:600px;">
