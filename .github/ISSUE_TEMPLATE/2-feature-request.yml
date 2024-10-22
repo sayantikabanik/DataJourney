@@ -2,7 +2,7 @@ name: Feature Request
 description: Suggest a new idea for DataJourney.
 title: "[Feature Request]: [Brief description of the feature]"
 labels: enhancement
-assignees: ''
+assignees: DataJourney
 
 body:
   - type: markdown
