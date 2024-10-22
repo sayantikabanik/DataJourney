@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest a new idea for DataJourney.
+title: "[Feature Request]: [Brief description of the feature]"
+labels: enhancement
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+        Please provide a clear and concise description of the feature or tool.
+
+  - type: input
+    id: use-case
+    attributes:
+      label: Use Case
+      placeholder: How would you like to use this feature/ tool?
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      placeholder: Any other details that may help us understand your request

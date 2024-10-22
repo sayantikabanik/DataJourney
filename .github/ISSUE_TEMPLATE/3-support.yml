@@ -1,0 +1,19 @@
+name: Support DJ
+description: Support DataJourney/ Sponser.
+title: "[Support DJ]: [Brief description]"
+labels: support
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+        Please provide a clear and concise description
+
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Support Description
+      placeholder: How would you like to support DataJourney?
