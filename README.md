@@ -7,7 +7,7 @@
 
 <div style="text-align:center;">
     <div style="width:auto; overflow:hidden; display:inline-block;">
-        <img src="https://github.com/user-attachments/assets/97ffb3bf-01c5-4c7b-8d9f-65f529bb6203" alt="DJ rocks" style="width:100%; height:auto; object-fit:cover;">
+        <img src="./assets/DataJourney_logo_svg/dj_darkmode.svg" alt="DJ rocks" style="width:100%; height:auto; object-fit:cover;">
     </div>
 </div>
 
