@@ -30,8 +30,8 @@ jobs:
           cache: true
           activate-environment: true
           environment: journey
-      - name: Check pixi setup
-        run: pixi list
+      - name: Run pixi
+        run: pixi shell
 #        uses: conda-incubator/setup-miniconda@master
 #        with:
 #          miniforge-variant: Miniforge3
