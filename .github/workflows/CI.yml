@@ -30,9 +30,6 @@ jobs:
           cache: true
           activate-environment: true
           environment: journey
-      - run: pixi shell
-
-
       - name: Check pixi setup
         run: pixi list
 #        uses: conda-incubator/setup-miniconda@master
