@@ -26,7 +26,7 @@ jobs:
         with:
           pixi-version: v0.34.0
           cache: false
-          environments: journey
+          add-paths: pixi.lock
           activate-environment: true
       - name: Run pixi
         run: pixi list
