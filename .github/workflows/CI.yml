@@ -27,8 +27,6 @@ jobs:
           pixi-version: v0.34.0
           cache: true
           activate-environment: true
-          run: |
-            pixi run
 
 #        uses: conda-incubator/setup-miniconda@master
 #        with:
