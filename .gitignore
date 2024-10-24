@@ -134,3 +134,7 @@ dmypy.json
 
 #FastHTML files
 .sesskey
+
+# pixi environments
+.pixi
+*.egg-info
