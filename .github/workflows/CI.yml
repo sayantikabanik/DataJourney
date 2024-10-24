@@ -26,7 +26,6 @@ jobs:
         with:
           pixi-version: v0.34.0
           cache: false
-          manifest-path: pixi.lock
           activate-environment: true
 
 #        uses: conda-incubator/setup-miniconda@master
