@@ -26,8 +26,8 @@ jobs:
         with:
           pixi-version: v0.34.0
           cache: true
+          environments: journey
           activate-environment: true
-          environment: journey
           cache-write: ${{ github.event_name == 'push' && github.ref_name == 'conda_to_pixi' }}
       - name: Run pixi
         run: pixi list
