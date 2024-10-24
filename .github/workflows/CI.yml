@@ -26,7 +26,7 @@ jobs:
         with:
           pixi-version: v0.34.0
           cache: false
-          manifest-path: pixi.lock
+#          manifest-path: pixi.lock
           environments: journey
           activate-environment: true
 
