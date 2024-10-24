@@ -26,6 +26,7 @@ jobs:
         with:
           pixi-version: v0.34.0
           cache: false
+          frozen: true
           activate-environment: true
 
 #        uses: conda-incubator/setup-miniconda@master
