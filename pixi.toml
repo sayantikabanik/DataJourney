@@ -6,8 +6,6 @@ name = "journey"
 platforms = ["osx-arm64"]
 version = "0.1.0"
 
-[tasks]
-
 [dependencies]
 python = "3.10.*"
 intake = "0.6.5.*"
@@ -37,3 +35,7 @@ mitoinstaller = "*"
 quarto = "*"
 openai = "*"
 azure-ai-inference = "*"
+
+[tasks]
+DJ_package = "pip install -e ."
+DJ_pre_commit = "pre-commit install"
