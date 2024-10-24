@@ -25,11 +25,11 @@ jobs:
         uses: prefix-dev/setup-pixi@v0.8.0
         with:
           pixi-version: v0.34.0
-          cache: false
-          add-paths: pixi.lock
+          cache: true
           activate-environment: true
-      - name: Run pixi
-        run: pixi list
+          run: |
+            pixi run
+
 #        uses: conda-incubator/setup-miniconda@master
 #        with:
 #          miniforge-variant: Miniforge3
