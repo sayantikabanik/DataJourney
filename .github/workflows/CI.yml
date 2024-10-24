@@ -22,26 +22,31 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up env
-        uses: conda-incubator/setup-miniconda@master
+      - name: Set up env with pixi goodness
+        uses: prefix-dev/setup-pixi@v0.8.0
         with:
-          miniforge-variant: Miniforge3
-          miniforge-version: latest
-          activate-environment: journey
-          environment-file: environment.yml
-          python-version: ${{ matrix.python-version }}
-          auto-activate-base: false
-          channels: conda-forge
-          channel-priority: strict
+          activate-environment: true
 
-      - name: Install package
-        run: |
-          pip install -e .
-#       - name: Test with pytest
-#         run: |
-#           pytest tests/package.py 
-      - name: Conda info
-        run: conda info
-      - name: Conda list
-        run: conda list
-
+      - name: Check pixi setup
+        run: pixi list
+#        uses: conda-incubator/setup-miniconda@master
+#        with:
+#          miniforge-variant: Miniforge3
+#          miniforge-version: latest
+#          activate-environment: journey
+#          environment-file: environment.yml
+#          python-version: ${{ matrix.python-version }}
+#          auto-activate-base: false
+#          channels: conda-forge
+#          channel-priority: strict
+#
+#      - name: Install package
+#        run: |
+#          pip install -e .
+##       - name: Test with pytest
+##         run: |
+##           pytest tests/package.py
+#      - name: Conda info
+#        run: conda info
+#      - name: Conda list
+#        run: conda list
