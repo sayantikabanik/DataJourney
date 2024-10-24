@@ -39,3 +39,5 @@ azure-ai-inference = "*"
 [tasks]
 DJ_package = "pip install -e ."
 DJ_pre_commit = "pre-commit install"
+
+build = { features = ["journey"], solve-group = "default" }
