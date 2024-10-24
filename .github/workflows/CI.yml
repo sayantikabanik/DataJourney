@@ -25,10 +25,9 @@ jobs:
         uses: prefix-dev/setup-pixi@v0.8.0
         with:
           pixi-version: v0.34.0
-          cache: true
+          cache: false
           environments: journey
           activate-environment: true
-          cache-write: ${{ github.event_name == 'push' && github.ref_name == 'conda_to_pixi' }}
       - name: Run pixi
         run: pixi list
 #        uses: conda-incubator/setup-miniconda@master
