@@ -29,6 +29,7 @@ panel = "*"
 holoviews = "*"
 aiohttp = "*"
 python-fasthtml = "*"
+alembic = ">=1.13.3,<2"
 
 [pypi-dependencies]
 mitoinstaller = "*"

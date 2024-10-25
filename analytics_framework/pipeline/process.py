@@ -1,32 +1,23 @@
 import intake
-from dagster import get_dagster_logger, job, op, Output, graph
+from pandas import DataFrame
+from dagster import asset, Definitions
 from analytics_framework import INTAKE_LOC
 
-from dagster.utils.log import get_dagster_logger
-logger = get_dagster_logger()
-
 catalog_path = INTAKE_LOC.joinpath("catalog_entry.yml")
+catalog = intake.open_catalog(catalog_path)
 
-@op
-def read_stock_price_data():
-    catalog = intake.open_catalog(catalog_path)
+@asset
+def simple_rolling_average():
     df_raw = catalog.twilio_stock_price.read()
-    logger.info(f"Raw dataset first 05 rows: {df_raw.head(5)}")
-    logger.info(f"Shape of the data loaded: {df_raw.shape}")
-    return df_raw
+    SRA = df_raw['close'].rolling(window=30).mean() # rolling avg for 30 days
+    return SRA
 
 
-@op
-def rolling_average(df_raw):
-    simple_rolling_avg = df_raw['close'].rolling(30).mean() # rolling avg for 30 days
-    logger.info(f"Simple stock closing price rolling avg for 300 days: {simple_rolling_avg}")
+@asset
+def exponential_rolling_average():
+    df_raw = catalog.twilio_stock_price.read()
+    ERA = df_raw['close'].ewm(span=30, adjust=False).mean()
+    return ERA
 
 
-@job
-def compute():
-    df_raw = read_stock_price_data()
-    result_simple_rolling_avg = rolling_average(df_raw)
-
-
-if __name__ == "__main__":
-    result = compute.execute_in_process()
+outcome = Definitions(assets=[simple_rolling_average, exponential_rolling_average])
