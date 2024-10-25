@@ -23,8 +23,8 @@ scikit-learn = "*"
 statsmodels = "*"
 urllib3 = "*"
 hvplot = "*"
-dagster = "0.15.3.*"
-dagit = "0.15.3.*"
+dagster = "1.8.13.*"
+dagit = "1.8.13.*"
 panel = "*"
 holoviews = "*"
 aiohttp = "*"
@@ -39,5 +39,4 @@ azure-ai-inference = "*"
 [tasks]
 DJ_package = "pip install -e ."
 DJ_pre_commit = "pre-commit install"
-
-#build = { features = ["journey"], solve-group = "default" }
+DJ_run_dagster = { cmd = "dagit -f process.py", depends-on = "DJ_package", cwd = "analytics_framework/pipeline" }
