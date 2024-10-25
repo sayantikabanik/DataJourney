@@ -75,16 +75,14 @@ Just like the name suggests, pre-commit-hooks are designed to format the code ba
 ```shell
 pixi run DJ_pre_commit
 ```
-### How to run the applications?
+### Commands to run modules under DataJourney
 
 #### Dagster UI
+
 ```shell
-cd analytics_framework/pipeline
+pixi run DJ_run_dagster
 ```
-```shell
-dagit -f process.py
-```
-![Dagit UI output](./output/dagit_ui.png)
+![Dagit UI output](./assets/pipeline_assets/dagster_ui.png)
 
 #### Panel app
 ```shell
