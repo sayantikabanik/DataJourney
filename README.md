@@ -25,10 +25,10 @@ Built on open-source principles, the framework guides users through essential st
 ✅ = Implemented}
 
 ✅ `Python Packaging framework` design principles\
-✅ `Conda` environment added\
 ✅ `GitHub actions` configured\
 ✅ `Vale.sh` configured at PR level\
 ✅ `Pre-commit hooks` configured for code linting/formatting\
+✅ Environment management via [pixi](https://prefix.dev/)\
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
 ✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
@@ -58,29 +58,22 @@ This dataset is licensed under Creative Commons Attribution 4.0 (https://creativ
 
 ![Screenshot 2022-08-29 at 3 41 12 PM (2)](https://user-images.githubusercontent.com/17350312/187180872-881322ed-dfc7-478b-bd07-5fefc1642cb5.png)
 
-### Environment setup using conda:
+### Environment setup using pixi:
 
-#### Installing miniconda
-- Visit : https://docs.conda.io/en/latest/miniconda.html
-
-#### Create a conda environment
-```shell
-conda env create -f environment.yml
-```
-```shell
-conda activate journey
-```
+#### Installing pixi & getting started
+- Download pixi : [prefix.dev](https://prefix.dev/)
+- Command to activate env: `pixi shell`
 
 #### Install the package locally
 ```shell
-pip install -e .
+pixi run DJ_package
 ```
 
 #### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details 🗒](https://pre-commit.com/)
 
 ```shell
-pre-commit install
+pixi run DJ_pre_commit
 ```
 ### How to run the applications?
 

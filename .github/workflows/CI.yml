@@ -1,11 +1,9 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+# Moving from conda to pixi way of env management
+# Read more: https://pixi.sh/dev/basic_usage/
 
 name: CI
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
   pull_request:
@@ -13,37 +11,19 @@ on:
   workflow_dispatch:
 
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  workflow_dispatch:
+
 jobs:
   Env_check:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -l {0}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Set up env
-        uses: conda-incubator/setup-miniconda@master
+      - name: Set up env with pixi goodness
+        uses: prefix-dev/setup-pixi@v0.8.0
         with:
-          miniforge-variant: Miniforge3
-          miniforge-version: latest
-          activate-environment: journey
-          environment-file: environment.yml
-          python-version: ${{ matrix.python-version }}
-          auto-activate-base: false
-          channels: conda-forge
-          channel-priority: strict
-
-      - name: Install package
-        run: |
-          pip install -e .
-#       - name: Test with pytest
-#         run: |
-#           pytest tests/package.py 
-      - name: Conda info
-        run: conda info
-      - name: Conda list
-        run: conda list
-
+          pixi-version: v0.34.0
+          cache: true
+      - run: pixi run DJ_package
+      - run: pixi run DJ_pre_commit
