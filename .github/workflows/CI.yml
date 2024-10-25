@@ -27,10 +27,9 @@ jobs:
           pixi-version: v0.34.0
           cache: true
       - run: pixi run DJ_package
-      - uses: actions/upload-artifact@v4
-        with:
-          name: journey-${{ github.run_number }}-dist
-          path: ./dist
+      - run: pixi run DJ_pre_commit
+
+
 
 #        uses: conda-incubator/setup-miniconda@master
 #        with:
