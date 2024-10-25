@@ -19,15 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up env with pixi goodness
         uses: prefix-dev/setup-pixi@v0.8.0
         with:
           pixi-version: v0.34.0
-          cache: false
-          frozen: true
-          activate-environment: true
+          cache: true
+          environments: journey
+      - run: pixi run DJ_package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: journey-${{ github.run_number }}-dist
+          path: ./dist
 
 #        uses: conda-incubator/setup-miniconda@master
 #        with:
