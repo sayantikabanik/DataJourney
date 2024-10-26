@@ -53,16 +53,23 @@ Terms of Use
 This dataset is licensed under Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
 ```
 
-#### Codespaces configured
-*Currently new pre-build images are disabled due to limited storage*
-
-![Screenshot 2022-08-29 at 3 41 12 PM (2)](https://user-images.githubusercontent.com/17350312/187180872-881322ed-dfc7-478b-bd07-5fefc1642cb5.png)
-
 ### Environment setup using pixi:
 
 #### Installing pixi & getting started
 - Download pixi : [prefix.dev](https://prefix.dev/)
-- Command to activate env: `pixi shell`
+- Activate env: `pixi shell`
+- List all the tasks: `pixi task list`
+
+```shell
+# current tasks present under DJ
+DJ_package
+DJ_pre_commit
+DJ_run_dagster
+DJ_run_fasthtml_app
+DJ_run_flask_app
+DJ_run_mito_app
+DJ_run_panel_app
+```
 
 #### Install the package locally
 ```shell
@@ -70,7 +77,7 @@ pixi run DJ_package
 ```
 
 #### 🔌 About pre-commit-hooks and activating
-Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details 🗒](https://pre-commit.com/)
+Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details](https://pre-commit.com/)
 
 ```shell
 pixi run DJ_pre_commit
