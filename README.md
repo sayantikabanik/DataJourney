@@ -96,15 +96,17 @@ The dashboard generated is exported into HTML format and saved as [stock_price_t
 
 #### Mito
 
-Before running the jupyter notebook `doc/mito_exp.ipynb`, run the below command
-in your terminal to enable the installer. Might take some time to run.
-
 To explore further visit [trymito.io](https://docs.trymito.io/)
 ```shell
-python -m mitoinstaller install
+pixi run DJ_run_mito_app
 ```
-![mito output](./output/mito_graph.png "Graph generated via mitosheet") ![mito output operation](./output/mito_operations.png "Operations performed via mitosheet")
 
+[//]: # (![mito output]&#40;assets/pipeline/mito_graph.png "Graph generated via mitosheet"&#41; ![mito output operation]&#40;assets/pipeline/mito_operations.png "Operations performed via mitosheet"&#41;)
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="assets/pipeline/mito_graph.png" alt="mito_output" width="400"/>
+    <img src="assets/pipeline/mito_operations.png" alt="mito_output" width="400"/>
+</div>
 
 #### Display all data sources present via web UI
 
@@ -112,4 +114,4 @@ python -m mitoinstaller install
 # Run FastHTML app
 pixi run DJ_run_fasthtml_app
 ```
-![data_sources_fasthtml.png](assets%2Fpipeline%2Fdata_sources_fasthtml.png)
+![data_sources_fasthtml.png](assets/pipeline/data_sources_fasthtml.png)

@@ -45,3 +45,4 @@ DJ_run_dagster = { cmd = "dagit -f process.py", depends-on = "DJ_package", cwd =
 DJ_run_panel_app = { cmd = "python stock_price_twilio_app.py", depends-on = "DJ_package", cwd = "analytics_framework/dashboard" }
 DJ_run_flask_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_flask" }
 DJ_run_fasthtml_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_fasthtml" }
+DJ_run_mito_app = { cmd = "jupyter notebook mito_exp.ipynb", depends-on = "DJ_package", cwd = "usage_guide"}
