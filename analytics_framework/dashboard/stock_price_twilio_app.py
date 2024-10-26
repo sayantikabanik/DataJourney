@@ -33,7 +33,7 @@ class Base:
                                                       legend_position='top_left')
         app_obj = pn.Column(simple_table, plot_curve_open_close)
         # exporting panel dashboard as html
-        app_obj.save('stock_price_dashboard.html', embed=True)
+        app_obj.save('stock_price_twilio_dashboard.html', embed=True)
         return app_obj
 
     def plot(self):

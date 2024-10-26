@@ -82,46 +82,36 @@ pixi run DJ_pre_commit
 ```shell
 pixi run DJ_run_dagster
 ```
-![Dagit UI output](./assets/pipeline_assets/dagster_ui.png)
+![Dagit UI output](assets/pipeline/dagster_ui.png)
 
 #### Panel app
 ```shell
-cd analytics_framework/dashboard
+pixi run DJ_run_panel_app
 ```
-```shell
-python simple_app.py
-```
-*NOTE:*
-The dashboard generated is exported into HTML format and saved as `stock_price_dashboard.html`
 
-![Panel app output](./output/panel_app_stock.png)
+*NOTE:*
+The dashboard generated is exported into HTML format and saved as [stock_price_twilio_dashboard](analytics_framework%2Fdashboard%2Fstock_price_twilio_dashboard.html)
+
+![Panel app output](assets/dashboard/panel_app_stock.png)
 
 #### Mito
 
-Before running the jupyter notebook `doc/mito_exp.ipynb`, run the below command
-in your terminal to enable the installer. Might take some time to run.
-
 To explore further visit [trymito.io](https://docs.trymito.io/)
 ```shell
-python -m mitoinstaller install
+pixi run DJ_run_mito_app
 ```
-![mito output](./output/mito_graph.png "Graph generated via mitosheet") ![mito output operation](./output/mito_operations.png "Operations performed via mitosheet")
 
+[//]: # (![mito output]&#40;assets/pipeline/mito_graph.png "Graph generated via mitosheet"&#41; ![mito output operation]&#40;assets/pipeline/mito_operations.png "Operations performed via mitosheet"&#41;)
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="assets/pipeline/mito_graph.png" alt="mito_output" width="400"/>
+    <img src="assets/pipeline/mito_operations.png" alt="mito_output" width="400"/>
+</div>
 
 #### Display all data sources present via web UI
 
 ```shell
-# Instructions specific to FastHTML app
-cd intake/web_ui_fasthtml
-python app.py
+# Run FastHTML app
+pixi run DJ_run_fasthtml_app
 ```
-```python
-Link: http://localhost:5001
-INFO:     Will watch for changes in these directories: ['../DataJourney/analytics_framework/intake/web_ui_fasthtml']
-INFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)
-INFO:     Started reloader process [20071] using WatchFiles
-INFO:     Started server process [20075]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-```
-![Screenshot 2024-07-31 at 4 42 44 PM](https://github.com/user-attachments/assets/a1c977c9-1698-416c-8ac3-15fdbffa0b0a)
+![data_sources_fasthtml.png](assets/pipeline/data_sources_fasthtml.png)
