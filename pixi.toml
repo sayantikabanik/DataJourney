@@ -39,10 +39,12 @@ openai = "*"
 azure-ai-inference = "*"
 
 [tasks]
+GIT_TOKEN_CHECK = "os.getenv(GITHUB_TOKEN)"
 DJ_package = "pip install -e ."
 DJ_pre_commit = "pre-commit install"
-DJ_run_dagster = { cmd = "dagit -f process.py", depends-on = "DJ_package", cwd = "analytics_framework/pipeline" }
-DJ_run_panel_app = { cmd = "python stock_price_twilio_app.py", depends-on = "DJ_package", cwd = "analytics_framework/dashboard" }
-DJ_run_flask_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_flask" }
-DJ_run_fasthtml_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_fasthtml" }
-DJ_run_mito_app = { cmd = "jupyter notebook mito_exp.ipynb", depends-on = "DJ_package", cwd = "usage_guide"}
+DJ_dagster = { cmd = "dagit -f process.py", depends-on = "DJ_package", cwd = "analytics_framework/pipeline" }
+DJ_panel_app = { cmd = "python stock_price_twilio_app.py", depends-on = "DJ_package", cwd = "analytics_framework/dashboard" }
+DJ_flask_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_flask" }
+DJ_fasthtml_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_fasthtml" }
+DJ_mito_app = { cmd = "jupyter notebook mito_exp.ipynb", depends-on = "DJ_package", cwd = "usage_guide"}
+DJ_ai_models = {cmd = "python analyse_my_data__gpt_4o_mini.py", cwd= "analytics_framework/ai_modeling"}

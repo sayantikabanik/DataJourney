@@ -59,17 +59,20 @@ This dataset is licensed under Creative Commons Attribution 4.0 (https://creativ
 - Download pixi : [prefix.dev](https://prefix.dev/)
 - Activate env: `pixi shell`
 - List all the tasks: `pixi task list`
+- Execute a task from the list: `pixi run <TASK>`
+- Execute a task with verbosity enabled: `pixi run -v <TASK>`
 
-```shell
 # current tasks present under DJ
-DJ_package
-DJ_pre_commit
-DJ_run_dagster
-DJ_run_fasthtml_app
-DJ_run_flask_app
-DJ_run_mito_app
-DJ_run_panel_app
-```
+
+- GIT_TOKEN_CHECK
+- DJ_package
+- DJ_pre_commit
+- DJ_dagster
+- DJ_fasthtml_app
+- DJ_flask_app
+- DJ_mito_app
+- DJ_panel_app
+- DJ_ai_models
 
 #### Install the package locally
 ```shell
@@ -87,13 +90,13 @@ pixi run DJ_pre_commit
 #### Dagster UI
 
 ```shell
-pixi run DJ_run_dagster
+pixi run DJ_dagster
 ```
 ![Dagit UI output](assets/pipeline/dagster_ui.png)
 
 #### Panel app
 ```shell
-pixi run DJ_run_panel_app
+pixi run DJ_panel_app
 ```
 
 *NOTE:*
@@ -105,7 +108,7 @@ The dashboard generated is exported into HTML format and saved as [stock_price_t
 
 To explore further visit [trymito.io](https://docs.trymito.io/)
 ```shell
-pixi run DJ_run_mito_app
+pixi run DJ_mito_app
 ```
 
 [//]: # (![mito output]&#40;assets/pipeline/mito_graph.png "Graph generated via mitosheet"&#41; ![mito output operation]&#40;assets/pipeline/mito_operations.png "Operations performed via mitosheet"&#41;)
@@ -119,6 +122,12 @@ pixi run DJ_run_mito_app
 
 ```shell
 # Run FastHTML app
-pixi run DJ_run_fasthtml_app
+pixi run DJ_fasthtml_app
 ```
 ![data_sources_fasthtml.png](assets/pipeline/data_sources_fasthtml.png)
+
+#### Executing LLM script to analyse data
+
+```shell
+pixi run DJ_ai_models
+```
