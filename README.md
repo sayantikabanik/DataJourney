@@ -3,7 +3,6 @@
 [![License](https://img.shields.io/badge/license-CC0%201.0%20Universal-blue)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Code of Conduct](https://img.shields.io/badge/Code_of_Conduct-Contributor%20Covenant-blue)](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)\
 [![CI](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/CI.yml)
-[![code-complexity-check](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml/badge.svg?event=pull_request)](https://github.com/sayantikabanik/DataJourney/actions/workflows/code-complexity-check.yml)
 [![github-repo-stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/github-repo-stats.yml)
 [![Deploy DataJourney Stats](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/static.yml)
 [![Lint prose](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml/badge.svg)](https://github.com/sayantikabanik/DataJourney/actions/workflows/review.yml)
@@ -33,7 +32,6 @@ Built on open-source principles, the framework guides users through essential st
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
 ✅ Building Dashboard using [holoviews](https://holoviews.org/gallery/index.html) + [panel](https://panel.holoviz.org/reference/index.html)\
 ✅ Exploratory data analysis (EDA) using [mito](https://www.trymito.io/)\
-✅ Analysing source code complexity using [Wily](https://wily.readthedocs.io/en/latest/index.html)\
 ✅ Web UI build on [Flask](https://flask.palletsprojects.com/en/3.0.x/) \
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
 ✅ Leverage AI models to analyse data [GitHub AI models Beta](https://docs.github.com/en/github-models/prototyping-with-ai-models)
