@@ -63,5 +63,5 @@ def analyze_data(intake_catalog_entry):
 
 
 # Example usage
-intake_catalog_entry = "address_sample"
+intake_catalog_entry = "twilio_stock_price"
 analyze_data(intake_catalog_entry)
