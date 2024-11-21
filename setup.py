@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 setup(
     author="sayantikabanik",
-    description="Code/Blog series combining Data engineering and OSS",
+    description="Design first open source data management toolkit",
     include_package_data=True,
     name="analytics_framework",
     packages=find_packages(),
