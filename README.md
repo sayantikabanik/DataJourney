@@ -19,6 +19,11 @@ DataJourney demonstrates how organizations can effectively manage and utilize da
 
 Built on open-source principles, the framework guides users through essential steps—from **identifying** goals and **selecting tools** to **testing** and **customising** workflows. With its flexible, modular design, DataJourney can be tailored to individual needs, making it an invaluable toolkit for data professionals.
 
+### Design Philosophy
+A mesh with additive, subtractive capabilities glued with open source.
+{More...coming soon}
+
+
 ### 🛠 Current workflows covered
 {✨= Experimental,
 ✅ = Implemented}
