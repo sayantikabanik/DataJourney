@@ -50,7 +50,7 @@ def analyze_data(intake_catalog_entry):
         response = client.chat.completions.create(
             messages=messages,
             model=model_name,
-            temperature=1.0,
+            temperature=5.0,
             max_tokens=2000,
             top_p=1.0
         )
