@@ -42,17 +42,16 @@ def analyze_data(intake_catalog_entry):
         {
             "role": "user",
             "content": f"Here is a summary of my data:\n{summary}\nProvide an analysis of this dataset, "
-                       f"display in html format along with the dataset provided.",
+                       f"provide 03 recommendation regarding investment options",
         }
     ]
 
-    # Generate a response from the GPT-4 model
     try:
         response = client.chat.completions.create(
             messages=messages,
             model=model_name,
-            temperature=1.0,
-            max_tokens=1000,
+            temperature=5.0,
+            max_tokens=2000,
             top_p=1.0
         )
 
@@ -62,6 +61,6 @@ def analyze_data(intake_catalog_entry):
         print(f"Error generating response: {e}")
 
 
-# Example usage
+# Example usage (other datasets available via intake catalog)
 intake_catalog_entry = "twilio_stock_price"
 analyze_data(intake_catalog_entry)
