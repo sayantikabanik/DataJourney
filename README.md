@@ -66,7 +66,7 @@ A mesh with additive, subtractive capabilities glued with open source.\
 - DJ_flask_app
 - DJ_mito_app
 - DJ_panel_app
-- DJ_ai_models
+- DJ_llm_analysis
 
 #### Install the package locally
 ```shell
@@ -120,8 +120,8 @@ pixi run DJ_fasthtml_app
 ```
 ![data_sources_fasthtml.png](assets/pipeline/data_sources_fasthtml.png)
 
-#### Executing LLM script to analyse data
+#### Executing LLM script: Generate Recommendation got the stock data
 
 ```shell
-pixi run DJ_ai_models
+pixi run DJ_llm_analysis
 ```
