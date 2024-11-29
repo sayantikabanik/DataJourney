@@ -88,6 +88,12 @@ pixi run DJ_pre_commit
 ```
 ### Commands to run modules under DataJourney
 
+#### Executing LLM script: Generate Recommendation got the stock data
+
+```shell
+pixi run DJ_llm_analysis
+```
+
 #### Dagster UI
 
 ```shell
@@ -126,9 +132,3 @@ pixi run DJ_mito_app
 pixi run DJ_fasthtml_app
 ```
 ![data_sources_fasthtml.png](assets/pipeline/data_sources_fasthtml.png)
-
-#### Executing LLM script: Generate Recommendation got the stock data
-
-```shell
-pixi run DJ_llm_analysis
-```
