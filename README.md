@@ -23,9 +23,9 @@ Built on open-source principles, the framework guides users through essential st
 Built with additive, subtractive capabilities glued with open source.
 Each layer has a certain strength of communication inbuilt
 
-- PO (Base): Static home(s) to keep it together `(GitHub)`\
-- P1 (Tooling): Tooling, strings `(Powered by open source)`\
-- P2 (Maintenance + Monitoring): Env, automations `(Pixi + GHA)`\
+- PO (Base): Static home(s) to keep it together `(GitHub)` 
+- P1 (Tooling): Tooling, strings `(Powered by open source)` 
+- P2 (Maintenance + Monitoring): Env, automations `(Pixi + GHA)` 
 - P3 (Abstraction): Layer(s), CLI/task manager for users to interact with `(Pixi)`
 
 
