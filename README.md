@@ -19,10 +19,14 @@ DataJourney demonstrates how organizations can effectively manage and utilize da
 
 Built on open-source principles, the framework guides users through essential steps—from **identifying** goals and **selecting tools** to **testing** and **customising** workflows. With its flexible, modular design, DataJourney can be tailored to individual needs, making it an invaluable toolkit for data professionals.
 
-### 🧱 Design Philosophy
-A mesh with additive, subtractive capabilities glued with open source.\
-{More...coming soon}
+### 🧱 Design Philosophy (LEGO)
+Built with additive, subtractive capabilities glued with open source.
 
+![DJ Design](assets/design/dj_vision.png)
+PO (Base): Static home(s) to keep it together (GitHub)
+P1 (Tooling): Tooling, strings (Open source)
+P2 (Maintenance + Monitoring): Env, automations (Pixi + GHA)
+P3 (Abstraction): Layer(s), CLI for users to interact with
 
 ### 🛠 Current workflows covered
 {✨= Experimental,
