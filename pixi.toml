@@ -40,7 +40,7 @@ azure-ai-inference = "*"
 
 [tasks]
 GIT_TOKEN_CHECK = "os.getenv(GITHUB_TOKEN)"
-DJ_package = "pip install -e ."
+DJ_package = "pip install --editable . --use-pep517"
 DJ_pre_commit = "pre-commit install"
 DJ_dagster = { cmd = "dagit -f process.py", depends-on = "DJ_package", cwd = "analytics_framework/pipeline" }
 DJ_panel_app = { cmd = "python stock_price_twilio_app.py", depends-on = "DJ_package", cwd = "analytics_framework/dashboard" }
