@@ -37,6 +37,7 @@ watchfiles = "*"
 quarto = "*"
 openai = "*"
 azure-ai-inference = "*"
+mistralai = "*"
 
 [tasks]
 GIT_TOKEN_CHECK = "os.getenv(GITHUB_TOKEN)"
@@ -47,4 +48,5 @@ DJ_panel_app = { cmd = "python stock_price_twilio_app.py", depends-on = "DJ_pack
 DJ_flask_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_flask" }
 DJ_fasthtml_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_fasthtml" }
 DJ_mito_app = { cmd = "jupyter notebook mito_exp.ipynb", depends-on = "DJ_package", cwd = "usage_guide"}
-DJ_llm_analysis = {cmd = "python analyse_my_data__gpt_4o_mini.py", cwd= "analytics_framework/ai_modeling"}
+DJ_llm_analysis_gpt_4o = {cmd = "python analyse_my_data__gpt_4o_mini.py", cwd= "analytics_framework/ai_modeling"}
+DJ_advance_llm_analysis_mistral = {cmd = "python advance_analysis_coral_bleeching_mistral.py", cwd= "analytics_framework/ai_modeling"}
