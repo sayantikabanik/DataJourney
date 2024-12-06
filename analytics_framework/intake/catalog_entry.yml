@@ -4,17 +4,15 @@ metadata:
 sources:
   address_sample:
     driver: csv
-    metadata: {
+    metadata:
         source_url: "https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html"
-    }
     args:
       urlpath: "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
 
   twilio_stock_price:
     driver: csv
-    metadata: {
+    metadata:
       source_url: "https://www.kaggle.com/datasets/sayantikabanik/twilio-stock-price-twlo20162021"
-    }
     args:
       urlpath: "{{CATALOG_DIR}}/data/TWLO_stock.csv"
 
@@ -22,8 +20,45 @@ sources:
     description: "van Woesik, R., Burkepile, D. (2022) Bleaching and environmental data for global coral reef sites from 1980-2020. Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 2) Version Date 2022-10-14 [if applicable, indicate subset used]. doi:10.26008/1912/bco-dmo.773466.2 [access date] Terms of Use.
                  This dataset is licensed under Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)"
     driver: csv
-    metadata: {
+    metadata:
       source_url: "https://www.bco-dmo.org/dataset/773466"
-    }
     args:
       urlpath: "{{CATALOG_DIR}}/data/global_bleaching_environmental.csv"
+      csv_kwargs:
+        dtype:
+          ClimSST: object
+          Distance_to_Shore: object
+          Percent_Bleaching: object
+          SSTA: object
+          SSTA_DHW: object
+          SSTA_DHWMax: object
+          SSTA_DHWMean: object
+          SSTA_DHW_Standard_Deviation: object
+          SSTA_Frequency: object
+          SSTA_FrequencyMax: object
+          SSTA_FrequencyMean: object
+          SSTA_Frequency_Standard_Deviation: object
+          SSTA_Maximum: object
+          SSTA_Mean: object
+          SSTA_Minimum: object
+          SSTA_Standard_Deviation: object
+          TSA: object
+          TSA_DHW: object
+          TSA_DHWMax: object
+          TSA_DHWMean: object
+          TSA_DHW_Standard_Deviation: object
+          TSA_Frequency: object
+          TSA_FrequencyMax: object
+          TSA_FrequencyMean: object
+          TSA_Frequency_Standard_Deviation: object
+          TSA_Maximum: object
+          TSA_Mean: object
+          TSA_Minimum: object
+          TSA_Standard_Deviation: object
+          Temperature_Kelvin: object
+          Temperature_Kelvin_Standard_Deviation: object
+          Temperature_Maximum: object
+          Temperature_Mean: object
+          Temperature_Minimum: object
+          Turbidity: object
+          Windspeed: object
