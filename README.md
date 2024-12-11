@@ -72,27 +72,27 @@ Each layer has a certain strength of communication inbuilt
 - DJ_llm_analysis
 
 
-#### 🔌 About pre-commit-hooks and activating
+### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details](https://pre-commit.com/)
 
 ```shell
 pixi run DJ_pre_commit
 ```
 
-#### 🦭 Executing LLM script: Generate Recommendation got the stock data
+### 🦭 Executing LLM script: Generate Recommendation got the stock data
 
 ```shell
 pixi run DJ_llm_analysis
 ```
 
-#### 🪼 Execute pre-configured Dagster pipeline
+### 🪼 Execute pre-configured Dagster pipeline
 
 ```shell
 pixi run DJ_dagster
 ```
 ![Dagit UI output](assets/pipeline/dagster_ui.png)
 
-#### 🐙 Panel app
+### 🐙 Panel app
 ```shell
 pixi run DJ_panel_app
 ```
@@ -102,7 +102,7 @@ The dashboard generated is exported into HTML format and saved as [stock_price_t
 
 ![Panel app output](assets/dashboard/panel_app_stock.png)
 
-#### 🐵 Mito
+### 🐵 Mito
 
 To explore further visit [trymito.io](https://docs.trymito.io/)
 ```shell
@@ -116,7 +116,7 @@ pixi run DJ_mito_app
     <img src="assets/pipeline/mito_operations.png" alt="mito_output" width="400"/>
 </div>
 
-#### 🦋 Display all data sources present via web UI
+### 🦋 Display all data sources present via web UI
 
 ```shell
 # Run FastHTML app
