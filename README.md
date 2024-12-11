@@ -48,7 +48,7 @@ Each layer has a certain strength of communication inbuilt
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
 ✅ Leverage AI models to analyse data [GitHub AI models Beta](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 
-### Quickly getting started with DataJourney
+### ☕️ Quickly getting started with DataJourney
 
 - Clone DJ `git@github.com:sayantikabanik/DataJourney.git`
 - Switch directory `cd DataJourney`
@@ -59,7 +59,7 @@ Each layer has a certain strength of communication inbuilt
 - Execute a task from the list: `pixi run <TASK>`
 - Execute a task with verbosity enabled: `pixi run -v <TASK>`
 
-### Active `tasks` under DJ
+### 🏃🏽‍♀️ Active `tasks` under DJ
 
 - GIT_TOKEN_CHECK
 - DJ_package
@@ -78,22 +78,21 @@ Just like the name suggests, pre-commit-hooks are designed to format the code ba
 ```shell
 pixi run DJ_pre_commit
 ```
-### Commands to run modules under DataJourney
 
-#### Executing LLM script: Generate Recommendation got the stock data
+#### 🦭 Executing LLM script: Generate Recommendation got the stock data
 
 ```shell
 pixi run DJ_llm_analysis
 ```
 
-#### Dagster UI
+#### 🪼 Execute pre-configured Dagster pipeline
 
 ```shell
 pixi run DJ_dagster
 ```
 ![Dagit UI output](assets/pipeline/dagster_ui.png)
 
-#### Panel app
+#### 🐙 Panel app
 ```shell
 pixi run DJ_panel_app
 ```
@@ -103,7 +102,7 @@ The dashboard generated is exported into HTML format and saved as [stock_price_t
 
 ![Panel app output](assets/dashboard/panel_app_stock.png)
 
-#### Mito
+#### 🐵 Mito
 
 To explore further visit [trymito.io](https://docs.trymito.io/)
 ```shell
@@ -117,7 +116,7 @@ pixi run DJ_mito_app
     <img src="assets/pipeline/mito_operations.png" alt="mito_output" width="400"/>
 </div>
 
-#### Display all data sources present via web UI
+#### 🦋 Display all data sources present via web UI
 
 ```shell
 # Run FastHTML app
