@@ -23,9 +23,9 @@ Built on open-source principles, the framework guides users through essential st
 Built with additive, subtractive capabilities glued with open source.
 Each layer has a certain strength of communication inbuilt
 
-- PO (Base): Static home(s) to keep it together `(GitHub)` 
-- P1 (Tooling): Tooling, strings `(Powered by open source)` 
-- P2 (Maintenance + Monitoring): Env, automations `(Pixi + GHA)` 
+- PO (Base): Static home(s) to keep it together `(GitHub)`
+- P1 (Tooling): Tooling, strings `(Powered by open source)`
+- P2 (Maintenance + Monitoring): Env, automations `(Pixi + GHA)`
 - P3 (Abstraction): Layer(s), CLI/task manager for users to interact with `(Pixi)`
 
 
@@ -48,22 +48,18 @@ Each layer has a certain strength of communication inbuilt
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
 ✅ Leverage AI models to analyse data [GitHub AI models Beta](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 
-### 📊 Repository stats
+### Quickly getting started with DataJourney
 
-⚙️ Managed by GitHub Action: https://github.com/jgehrcke/github-repo-stats \
-⏳ Configured to run daily at 23:55:00 IST\
-📬 Checkout daily reports generated: [DataJourney Stats on Web](https://sayantikabanik.github.io/DataJourney/)
-
-### Environment setup using pixi:
-
-#### Installing pixi & getting started
+- Clone DJ `git@github.com:sayantikabanik/DataJourney.git`
+- Switch directory `cd DataJourney`
 - Download pixi : [prefix.dev](https://prefix.dev/)
 - Activate env: `pixi shell`
+- Install DJ framework locally `pixi run DJ_package`
 - List all the tasks: `pixi task list`
 - Execute a task from the list: `pixi run <TASK>`
 - Execute a task with verbosity enabled: `pixi run -v <TASK>`
 
-# current tasks present under DJ
+### Active `tasks` under DJ
 
 - GIT_TOKEN_CHECK
 - DJ_package
@@ -75,10 +71,6 @@ Each layer has a certain strength of communication inbuilt
 - DJ_panel_app
 - DJ_llm_analysis
 
-#### Install the package locally
-```shell
-pixi run DJ_package
-```
 
 #### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details](https://pre-commit.com/)
