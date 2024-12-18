@@ -86,7 +86,7 @@ Just like the name suggests, pre-commit-hooks are designed to format the code ba
 pixi run DJ_pre_commit
 ```
 
-### 🦭 Executing LLM script: Generate Recommendation got the stock data
+### 🦭 Executing LLM script: Generate stock price recommendations
 
 ```shell
 pixi run DJ_llm_analysis
