@@ -16,11 +16,11 @@
 
 ### 🚌 DataJourney
 
-#### 🪶Short version 
+#### 🪶Short version
 
 Design- first Open Source Data Management Toolkit. Simplifies data workflows with modular, reproducible solutions
 
-#### 🌲Long version 
+#### 🌲Long version
 
 DataJourney demonstrates how organizations can effectively manage and utilize data by harnessing the power of open-source technologies. It's designed to help navigate the complex landscape of data tools, offering a structured approach to building **scalable**, and **reproducible** data workflows.
 
@@ -58,6 +58,8 @@ Each layer has a certain strength of communication inbuilt
 ### ☕️ Quickly getting started with DataJourney
 
 - Clone DJ `git@github.com:sayantikabanik/DataJourney.git`
+- Generate & add `GITHUB_TOKEN`, instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
+  - Added requirement to run the LLM workflows
 - Switch directory `cd DataJourney`
 - Download pixi : [prefix.dev](https://prefix.dev/)
 - Activate env: `pixi shell`
