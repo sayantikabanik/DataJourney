@@ -38,6 +38,11 @@ quarto = "*"
 openai = "*"
 azure-ai-inference = "*"
 mistralai = "*"
+langchain_anthropic = "*"
+langchain-community = "*"
+langgraph = "*"
+tavily-python = "*"
+langgraph-checkpoint-sqlite = "*"
 
 [tasks]
 GIT_TOKEN_CHECK = "os.getenv(GITHUB_TOKEN)"
