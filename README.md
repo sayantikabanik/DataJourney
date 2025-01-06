@@ -54,6 +54,7 @@ Each layer has a certain strength of communication inbuilt
 ✅ Web UI build on [Flask](https://flask.palletsprojects.com/en/3.0.x/) \
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
 ✅ Leverage AI models to analyse data [GitHub AI models Beta](https://docs.github.com/en/github-models/prototyping-with-ai-models)
+✨ LangChain integration
 
 ### ☕️ Quickly getting started with DataJourney
 
