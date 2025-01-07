@@ -46,6 +46,7 @@ Each layer has a certain strength of communication inbuilt
 ✅ `GitHub actions` configured\
 ✅ `Vale.sh` configured at PR level\
 ✅ `Pre-commit hooks` configured for code linting/formatting\
+✨ [LangChain](https://python.langchain.com/) Basics & workflows\
 ✅ Environment management via [pixi](https://prefix.dev/)\
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
@@ -54,7 +55,6 @@ Each layer has a certain strength of communication inbuilt
 ✅ Web UI build on [Flask](https://flask.palletsprojects.com/en/3.0.x/) \
 ✅ Web UI re-done and expanded with [FastHTML](https://docs.fastht.ml/)\
 ✅ Leverage AI models to analyse data [GitHub AI models Beta](https://docs.github.com/en/github-models/prototyping-with-ai-models)
-✨ LangChain integration
 
 ### ☕️ Quickly getting started with DataJourney
 
