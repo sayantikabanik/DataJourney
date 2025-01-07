@@ -2,7 +2,7 @@ import os
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
 
-# NOTE: Using GitHub OpenAI models (add your preferred token attribute)
+# NOTE: Using GitHub models here (add your preferred token attribute)
 
 token = os.environ["GITHUB_TOKEN"]
 endpoint = "https://models.inference.ai.azure.com"
