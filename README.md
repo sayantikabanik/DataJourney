@@ -81,6 +81,7 @@ Each layer has a certain strength of communication inbuilt
 - DJ_mito_app
 - DJ_panel_app
 - DJ_llm_analysis
+- DJ_hello_world_langchain
 
 
 ### 🔌 About pre-commit-hooks and activating
