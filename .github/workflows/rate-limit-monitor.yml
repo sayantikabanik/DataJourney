@@ -2,7 +2,7 @@ name: Monitor GitHub API Rate Limit
 
 on:
   schedule:
-    - cron: "0 * * * *" # Runs every hour
+    - cron: "0 0 * * *" # Runs daily at midnight
   workflow_dispatch: # Allows manual trigger
 
 jobs:
