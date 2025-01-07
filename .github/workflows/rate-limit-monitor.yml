@@ -1,0 +1,34 @@
+name: Monitor GitHub API Rate Limit
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  check-rate-limit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Monitor GitHub API Rate Limit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching rate limit information..."
+          curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit | jq '.'
+
+      - name: Log rate limit to file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit > rate_limit.json
+          echo "Rate limit logged to rate_limit.json"
+
+      - name: Upload rate limit log (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: rate-limit-log
+          path: rate_limit.json
