@@ -47,7 +47,7 @@ Each layer has a certain strength of communication inbuilt
 ✅ `GitHub actions` configured\
 ✅ `Vale.sh` configured at PR level\
 ✅ `Pre-commit hooks` configured for code linting/formatting\
-✨ [LangChain](https://python.langchain.com/) Basics & workflows\
+✨ `Hello world` LLM design example based on [LangChain](https://python.langchain.com/)\
 ✅ Environment management via [pixi](https://prefix.dev/)\
 ✅ Reading data from online sources using [intake](https://github.com/intake/intake)\
 ✅ Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)\
