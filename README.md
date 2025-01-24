@@ -75,8 +75,6 @@ Each layer has a certain strength of communication inbuilt
 
 ### 🏃🏽‍♀️ Active `tasks` under DJ
 
-Here's a markdown table with one-liner descriptions for each of the tasks:
-
 | **Task Name**                 | **Description**                                                                |
 |-------------------------------|--------------------------------------------------------------------------------|
 | `GIT_TOKEN_CHECK`             | Verifies the availability and validity of the Git authentication token.        |
