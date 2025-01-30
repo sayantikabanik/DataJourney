@@ -25,7 +25,7 @@ response = client.complete(
     ],
     model="DeepSeek-R1",
     temperature=1.3,
-    max_tokens=2048,
+    # max_tokens=2048,
 )
 
 print(response.choices[0].message.content)
