@@ -39,7 +39,7 @@ jobs:
         # because GHA pages job, only understands + seeks index keyword for a file name
         working-directory: sayantikabanik/DataJourney/latest-report
       - name: Upload HTML files to GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: sayantikabanik/DataJourney/latest-report/
       - name: Deploy to GitHub Pages
