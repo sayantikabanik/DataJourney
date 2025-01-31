@@ -7,7 +7,7 @@ import os
 import base64
 
 # NOTE: Using GitHub models here (add your preferred token attribute)
-# Refer analytics_framework/langchain/hello_world_lc.py for example
+# Refer analytics_framework/langchain/hello_world_lc.py for using GitHub token for auth
 
 token = os.environ["GITHUB_TOKEN"]
 endpoint = "https://models.inference.ai.azure.com"
