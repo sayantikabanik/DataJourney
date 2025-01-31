@@ -14,7 +14,9 @@ endpoint = "https://models.inference.ai.azure.com"
 model_name = "DeepSeek-R1"
 
 def suggest_visualization(dataframe):
-    """Suggests visualization type based on data characteristics."""
+    """Suggests a visualization type based on the characteristics of the data.
+    :param dataframe: A pandas DataFrame containing the data.
+    :return: A string representing the suggested visualization type"""
 
     num_numerical_cols = len(dataframe.select_dtypes(include=['number']).columns)
     num_categorical_cols = len(dataframe.select_dtypes(exclude=['number']).columns)
@@ -33,7 +35,10 @@ def suggest_visualization(dataframe):
         return "generic plot"  # Default if no clear match
 
 def generate_visualization_draft(dataframe, visualization_type):
-    """Generates a quick visualization draft (using matplotlib for now)."""
+    """Generates a quick draft of the suggested visualization using matplotlib.
+    :param dataframe: A pandas DataFrame containing the data.
+    :param visualization_type: A string representing the type of visualization to generate.
+    :return: A string containing the base64-encoded PNG image of the visualization."""
 
     plt.figure()  # Create a new figure for each plot
     if visualization_type == "histogram":
