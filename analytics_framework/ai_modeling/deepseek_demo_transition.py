@@ -24,6 +24,6 @@ response = client.complete(
         UserMessage(content=f"Translate the text into english {spanish_text}"),
     ],
     model="DeepSeek-R1",
-    temperature=1.3,
+    temperature=1.3,  # reference from the deepseek documentation: https://api-docs.deepseek.com/quick_start/parameter_settings
 )
 print(response.choices[0].message.content)
