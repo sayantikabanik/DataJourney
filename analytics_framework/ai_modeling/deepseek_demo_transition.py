@@ -21,7 +21,7 @@ spanish_text = """El significado de la vida
 
 response = client.complete(
     messages=[
-        UserMessage(content="Translate the text into english format:\n\n{spanish_text}"),
+        UserMessage(content=f"Translate the text into english {spanish_text}"),
     ],
     model="DeepSeek-R1",
     temperature=1.3,
