@@ -27,5 +27,4 @@ response = client.complete(
     temperature=1.3,
     # max_tokens=2048,
 )
-
 print(response.choices[0].message.content)
