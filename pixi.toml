@@ -35,7 +35,7 @@ langchain-anthropic = ">=0.3.1,<0.4"
 langgraph = ">=0.2.60,<0.3"
 pillow = ">=11.1.0,<12"
 transformers = ">=4.47.1,<5"
-langchain-openai = ">=0.2.14,<0.3"
+langchain-openai = ">=0.3.3,<0.4"
 
 [pypi-dependencies]
 mitoinstaller = "*"
@@ -45,6 +45,7 @@ quarto = "*"
 openai = "*"
 azure-ai-inference = "*"
 mistralai = "*"
+langchain-deepseek = "*"
 
 [tasks]
 GIT_TOKEN_CHECK = "os.getenv(GITHUB_TOKEN)"
