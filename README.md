@@ -90,8 +90,6 @@ Each layer has a certain strength of communication inbuilt
 | `DJ_spanish_eng_translation`  | Performs spanish to english translation with Deepseek-R1 (`NOTE`: Take about ~30 secs to execute this task) |
 | `DJ_sync_dataset_trees`       | Downloads and synchronizes the `trees.csv` dataset into the project structure.                              |
 
-Let me know if you'd like refinements or if there's anything you'd like to add! 🚀
-
 ### 🔌 About pre-commit-hooks and activating
 Just like the name suggests, pre-commit-hooks are designed to format the code based on PEP standards before committing. [More details](https://pre-commit.com/)
 
