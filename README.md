@@ -87,7 +87,7 @@ Each layer has a certain strength of communication inbuilt
 | `DJ_panel_app`                | Executes a Panel dashboard app for data visualization and analytics.                                        |
 | `DJ_llm_analysis`             | Performs analysis using large language models (LLMs) on project data.                                       |
 | `DJ_hello_world_langchain`    | Sets up a basic LangChain app as a "Hello World" example for LLMs.                                          |
-| `DJ_spanish_eng_translation`  | Performs spanish to english translation with Deepseek-R1 (`NOTE`: Take about ~30 secs to execute this task) |
+| `DJ_spanish_eng_translation`  | Performs Spanish to English translation with Deepseek-R1 (`NOTE`: Takes about ~30 secs to execute this task) |
 | `DJ_sync_dataset_trees`       | Downloads and synchronizes the `trees.csv` dataset into the project structure.                              |
 
 ### 🔌 About pre-commit-hooks and activating
