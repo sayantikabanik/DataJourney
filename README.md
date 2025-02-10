@@ -49,7 +49,7 @@ Each layer has a certain strength of communication inbuilt
 | ✅     | `GitHub actions` configured                                                                                      |
 | ✅     | `Vale.sh` configured at PR level                                                                                 |
 | ✅     | `Pre-commit hooks` configured for code linting/formatting                                                        |
-| ✨     | `Hello world` LLM design example based on [LangChain](https://python.langchain.com/)                              |
+| ✅     | `Hello world` LLM design example based on [LangChain](https://python.langchain.com/)                              |
 | ✅     | Environment management via [pixi](https://prefix.dev/)                                                           |
 | ✅     | Reading data from online sources using [intake](https://github.com/intake/intake)                                |
 | ✅     | Sample pipeline built using [Dagster](https://github.com/dagster-io/dagster)                                     |
@@ -87,6 +87,7 @@ Each layer has a certain strength of communication inbuilt
 | `DJ_panel_app`                | Executes a Panel dashboard app for data visualization and analytics.           |
 | `DJ_llm_analysis`             | Performs analysis using large language models (LLMs) on project data.          |
 | `DJ_hello_world_langchain`    | Sets up a basic LangChain app as a "Hello World" example for LLMs.             |
+| `DJ_spanish_eng_translation`  | Performs spanish to english translation with Deepseek-R1                       |
 | `DJ_sync_dataset_trees`       | Downloads and synchronizes the `trees.csv` dataset into the project structure. |
 
 Let me know if you'd like refinements or if there's anything you'd like to add! 🚀

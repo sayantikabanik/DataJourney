@@ -48,15 +48,20 @@ mistralai = "*"
 langchain-deepseek = "*"
 
 [tasks]
+# operations_DJ
 GIT_TOKEN_CHECK = "os.getenv(GITHUB_TOKEN)"
 DJ_package = "pip install --editable . --use-pep517"
 DJ_pre_commit = "pre-commit install"
+# applications
 DJ_dagster = { cmd = "dagit -f process.py", depends-on = "DJ_package", cwd = "analytics_framework/pipeline" }
 DJ_panel_app = { cmd = "python stock_price_twilio_app.py", depends-on = "DJ_package", cwd = "analytics_framework/dashboard" }
 DJ_flask_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_flask" }
 DJ_fasthtml_app = { cmd = "python app.py", depends-on = "DJ_package", cwd = "analytics_framework/intake/web_ui_fasthtml" }
 DJ_mito_app = { cmd = "jupyter notebook mito_exp.ipynb", depends-on = "DJ_package", cwd = "usage_guide"}
+# llm
 DJ_llm_analysis_gpt_4o = {cmd = "python analyse_my_data__gpt_4o_mini.py", cwd = "analytics_framework/ai_modeling"}
-DJ_advance_llm_analysis = {cmd = "python advance_analysis_coral_bleeching.py", cwd = "analytics_framework/ai_modeling"}
+DJ_advance_llm_analysis = {cmd = "pythonadvance_analysis_coral_bleeching__meta_Llama_3.py", cwd = "analytics_framework/ai_modeling"}
 DJ_hello_world_langchain = {cmd = "python hello_world_lc.py", cwd = "analytics_framework/langchain"}
+DJ_spanish_eng_translation = { cmd = "python demo_spanish_translation__deepseek_r1.py", cwd = "analytics_framework/ai_modeling"}
+# miscellaneous
 DJ_sync_dataset_trees = {cmd = "curl -v -o trees.csv 'https://people.sc.fsu.edu/~jburkardt/data/csv/trees.csv'", outputs = ["trees.csv"], cwd = "analytics_framework/intake/data"}
