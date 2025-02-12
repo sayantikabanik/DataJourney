@@ -15,8 +15,7 @@ jobs:
       uses: errata-ai/vale-action@reviewdog
       with:
         files: all
-#        vale_flags: --glob=!*/*-fr/*
-        filter_mode: file
+        filter_mode: nofilter
         reporter: github-pr-check
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
