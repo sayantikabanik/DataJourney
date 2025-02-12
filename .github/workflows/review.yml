@@ -11,13 +11,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-
     - name: Vale
       uses: errata-ai/vale-action@reviewdog
       with:
-        files: sayantikabanik/DataJourney/analytics_framework/ai_modeling/*.md
-        vale_flags: --glob=!*/*-fr/*
-        filter_mode: file
+        files: all
+        filter_mode: nofilter
         reporter: github-pr-check
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
