@@ -17,7 +17,7 @@ jobs:
       with:
         files: sayantikabanik/DataJourney/analytics_framework/ai_modeling/*.md
         vale_flags: --glob=!*/*-fr/*
-        filter_mode: nofilter
+        filter_mode: file
         reporter: github-pr-check
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
