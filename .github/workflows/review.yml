@@ -11,13 +11,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: switch the working directory
-      run: ls -al
-      working-directory: sayantikabanik/DataJourney/
     - name: Vale
       uses: errata-ai/vale-action@reviewdog
       with:
-        files: .*md
+        files: sayantikabanik/DataJourney/*.md
         vale_flags: --glob=!*/*-fr/*
         filter_mode: file
         reporter: github-pr-check
