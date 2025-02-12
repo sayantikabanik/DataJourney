@@ -11,11 +11,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-
+    - name: switch the working directory
+      run: ls -al
+      working-directory: sayantikabanik/DataJourney/
     - name: Vale
       uses: errata-ai/vale-action@reviewdog
       with:
-        working-directory: sayantikabanik/DataJourney/
         files: .*md
         vale_flags: --glob=!*/*-fr/*
         filter_mode: file
